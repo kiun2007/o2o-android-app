@@ -1,0 +1,9 @@
+include ':libmc'
+include ':master'
+include ':consumer'
+include ':easeui'
+//
+//project(':easeui').projectDir = new File('./easeui/easeui')
+//include ':ModelCommon'
+//project (':ModelCommon').projectDir = new File('../ModelCommon')
+//include ':ModelCommon:libmc'

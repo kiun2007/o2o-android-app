@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        app:barTitle="@string/waiting_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/id_map_wait_service"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.kiun.modelcommonsupport.ui.views.ALinearLayout
+            app:dataPath="orderStatus"
+            app:goneFormula="L2"
+            android:id="@+id/contentPanelLayout"
+            android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/background_shape_radius_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.kiun.modelcommonsupport.ui.views.AImageView
+                    app:dataPath="masterHeadImg"
+                    android:id="@+id/id_wait_imageView"
+                    app:radius="20dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:scaleType="centerCrop"
+                    android:src="@color/orange"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            app:dataPath="masterName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"/>
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/icon_order_num"/>
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            app:dataPath="masterOrderNum"
+                            app:format="%s单"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="@color/light_black"
+                            android:textSize="12sp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="6dp"
+                            android:background="@color/gray"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="6dp"
+                            android:src="@drawable/icon_star_bright"/>
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            app:dataPath="masterScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="@color/light_black"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            app:dataPath="masterProfession"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/light_black"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:text=""
+                            android:textColor="@color/light_black"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <com.kiun.modelcommonsupport.ui.views.ALinearLayout
+                    app:dataPath="orderStatus"
+                    app:goneFormula="=null"
+                    app:tintColorLabel="@id/statusLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp">
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        app:dataPath="orderStatus"
+                        app:format="[items][item]待支付,待接单,待上门,待服务,服务中,待支付,已完成,已完成,取消订单[/item][color]0072ff,FF7D00,FF7D00,FF7D00,FF7D00,0072ff,888888,888888,888888[/color][/items]"
+                        android:id="@+id/statusLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="状态"
+                        android:textSize="14sp"
+                        android:background="@drawable/svg_radis_label"
+                        android:textColor="@color/orange" />
+                </com.kiun.modelcommonsupport.ui.views.ALinearLayout>
+                <com.kiun.modelcommonsupport.ui.views.ALinearLayout
+                    app:dataPath="salesAfterStatus"
+                    app:goneFormula="=null"
+                    app:tintColorLabel="@id/statusLabelAfter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp">
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        app:dataPath="salesAfterStatus"
+                        app:format="[items][item]已申请,退款中,待上门,待服务,服务中,已完成,未通过[/item][color]FF7D00,FF7D00,FF7D00,FF7D00,0072ff,888888,888888[/color][/items]"
+                        android:id="@+id/statusLabelAfter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="状态"
+                        android:textSize="14sp"
+                        android:background="@drawable/svg_radis_label"
+                        android:textColor="@color/orange" />
+                </com.kiun.modelcommonsupport.ui.views.ALinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/eventPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="15dp">
+                <com.kiun.modelcommonsupport.ui.views.ALinearLayout
+                    app:eventTag="0x300D"
+                    app:dataPath="salesAfterStatus"
+                    app:goneFormula="!null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/icon_bigcancel"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="取消订单"
+                        android:textSize="14sp"
+                        android:textColor="@color/light_black"/>
+                </com.kiun.modelcommonsupport.ui.views.ALinearLayout>
+                <com.kiun.modelcommonsupport.ui.views.ALinearLayout
+                    app:eventTag="0x300E"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/icon_page"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/order_detail"
+                        android:textSize="14sp"
+                        android:textColor="@color/light_black"/>
+                </com.kiun.modelcommonsupport.ui.views.ALinearLayout>
+                <com.kiun.modelcommonsupport.ui.views.ALinearLayout
+                    app:eventTag="0x3008"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/icon_chat"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/start_chat"
+                        android:textSize="14sp"
+                        android:textColor="@color/light_black"/>
+                </com.kiun.modelcommonsupport.ui.views.ALinearLayout>
+                <com.kiun.modelcommonsupport.ui.views.ALinearLayout
+                    app:eventTag="0x300F"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/icon_phone"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/call_phone"
+                        android:textSize="14sp"
+                        android:textColor="@color/light_black"/>
+                </com.kiun.modelcommonsupport.ui.views.ALinearLayout>
+            </LinearLayout>
+        </com.kiun.modelcommonsupport.ui.views.ALinearLayout>
+        <com.kiun.modelcommonsupport.ui.views.ALinearLayout
+            app:dataPath="salesAfterStatus"
+            app:goneFormula="!null"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.kiun.modelcommonsupport.ui.views.ALinearLayout
+                app:dataPath="orderStatus"
+                app:goneFormula="G1"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.phillipcalvin.iconbutton.IconButton
+                    android:textColor="#FFF"
+                    android:id="@+id/id_register_next"
+                    android:layout_width="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/icon_bigcancel"
+                    android:drawableTint="#FFF"
+                    android:background="@drawable/button_background_shape_radius"
+                    android:text="取消订单"
+                    app:iconPadding="5dp"/>
+            </com.kiun.modelcommonsupport.ui.views.ALinearLayout>
+        </com.kiun.modelcommonsupport.ui.views.ALinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

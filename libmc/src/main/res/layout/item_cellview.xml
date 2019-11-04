@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cell_view_selector"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/leftTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="左边文字"
+                android:visibility="gone"
+                android:textColor="#000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tipTitleTextView"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="强"
+                android:textColor="#0F0"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rightPanelLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:id="@+id/rightTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="右边文字"
+                android:visibility="gone"
+                android:textColor="#999"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/rightImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/svg_right_arrow_gray" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:id="@+id/bottomLineView"
+        android:background="@drawable/background_line"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp" />
+</LinearLayout>

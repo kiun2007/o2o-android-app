@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        app:barLeftImage="@drawable/top_icon_city"
+        app:barLeftTitle="深圳"
+        app:barRightImage="@drawable/top_icon_message"
+        app:titleImage="@drawable/icon_logo_title_new"/>
+    <com.andview.refreshview.XRefreshView
+        android:tag="XRefreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.andview.refreshview.XScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4F4F4">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/home_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"/>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.amos.modulebase.widget.AutoSizeGridView
+                            android:id="@+id/grid_view"
+                            android:background="@color/white"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none"
+                            style="@style/list_style"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <com.kiun.modelcommonsupport.ui.views.AListView
+                    android:id="@+id/homeOrderList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:isAutoHeight="true"
+                    app:simpleLayout="@layout/item_listview_home"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/txt_more"
+                    android:text="查看更多"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:textColor="@color/main_color"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:id="@+id/listPaddingView"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <com.kiun.modelcommonsupport.ui.views.AListView
+                    android:id="@+id/homeItemList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/blue"
+                    app:isAutoHeight="true"
+                    app:simpleLayout="@layout/item_listview_itemview"/>
+            </LinearLayout>
+        </com.andview.refreshview.XScrollView>
+    </com.andview.refreshview.XRefreshView>
+</LinearLayout>

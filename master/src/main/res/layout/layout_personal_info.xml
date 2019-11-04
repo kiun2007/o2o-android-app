@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        app:barTitle="个人资料"
+        app:barRightTitle="编辑"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.kiun.modelcommonsupport.ui.views.ALinearLayout
+            android:id="@+id/infoContentLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    app:dataPath="masterName"
+                    android:text="姓名"
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <com.kiun.modelcommonsupport.ui.views.AImageView
+                    app:dataPath="masterHeadImg"
+                    app:isEditModel="true"
+                    app:radius="25dp"
+                    android:scaleType="centerCrop"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <View
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/background_line"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp" />
+            <LinearLayout
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:text="性别"
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    app:dataPath="gender"
+                    android:gravity="right"
+                    app:format="[items][item]男,女[/item][/items]"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/background_line"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp" />
+            <LinearLayout
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:text="生日"
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    app:format="[date][in]yyyyMMdd[/in][out]yyyy-MM-dd[/out][/date]"
+                    app:dataPath="birthday"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/background_line"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp" />
+            <com.kiun.modelcommonsupport.ui.views.ACellView
+                app:leftTitle="服务城市"
+                app:dataPath="city"
+                app:eventTag="10"
+                app:activityClass="com.kiun.modelcommonsupport.controllers.SelectCityActivity"
+                android:id="@+id/cityCellView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+            <LinearLayout
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:text="电话"
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:id="@+id/txt_phone"
+                    app:dataPath="phone"
+                    app:maskType="maskPhone"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/background_line"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp" />
+            <LinearLayout
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:text="职业"
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    app:dataPath="profession"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/background_line"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp" />
+            <LinearLayout
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:text="擅长技能"
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    app:dataPath="flag"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </com.kiun.modelcommonsupport.ui.views.ALinearLayout>
+    </ScrollView>
+</LinearLayout>

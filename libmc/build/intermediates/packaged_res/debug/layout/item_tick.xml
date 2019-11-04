@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/contentPanel"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#F4F4F4"
+              android:orientation="vertical"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp"
+              android:paddingTop="15dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_ticket"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mainPanelLL"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:paddingLeft="0dp">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            android:id="@+id/txt_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"
+                            android:textColor="#FF7d00"
+                            android:textSize="40sp"
+                            app:dataPath="voucherValueFormat"
+                            app:isHtml="true"/>
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            android:id="@+id/uintTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元"
+                            android:textColor="#FF7d00"
+                            android:textSize="12sp"
+                            app:dataPath="voucherType"
+                            app:format="[items][item]元,折[/item][/items]"/>
+                    </LinearLayout>
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        android:id="@+id/voucherTypeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="优惠券"
+                        android:textColor="#FF7d00"
+                        app:dataPath="voucherType"
+                        app:format="[items][item]代金券,折扣券[/item][/items]"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="25dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textSize="16sp"
+                            app:dataPath="voucherName"/>
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            android:id="@+id/txt_date_consumer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textColor="@color/font_gray"
+                            android:textSize="14sp"
+                            app:dataPath="dateFormat"
+                            app:isHtml="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#000"
+                            android:textSize="14sp"
+                            app:dataPath="suffix"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:id="@+id/voucherDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/img_more"
+                    android:textColor="#999"
+                    app:dataPath="voucherDesc"/>
+
+                <ImageView
+                    android:id="@+id/img_more"
+                    android:layout_width="25dp"
+                    android:visibility="gone"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:src="@drawable/arrow_down_grey"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

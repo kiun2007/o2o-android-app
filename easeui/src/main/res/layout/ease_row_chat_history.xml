@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/list_itease_layout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#fff"
+                android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/avatar_container"
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+
+        <com.hyphenate.easeui.widget.EaseImageView
+            android:id="@+id/avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ease_default_avatar"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/avatar_container"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="6dp"
+                android:layout_toLeftOf="@+id/time"
+                android:textColor="@color/list_itease_primary_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="6dp"
+                android:text="1122"
+                android:textColor="@color/list_itease_secondary_color"
+                android:textSize="13sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/msg_state"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ease_msg_state_fail_resend"/>
+
+            <TextView
+                android:id="@+id/mentioned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/msg_state"
+                android:padding="5dp"
+                android:text="@string/were_mentioned"
+                android:textColor="#e84e40"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/unread_msg_number"
+                android:layout_toRightOf="@id/mentioned"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/list_itease_secondary_color"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/unread_msg_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ease_unread_count_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

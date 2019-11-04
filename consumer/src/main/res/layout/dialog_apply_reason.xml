@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="20dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialogTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/apply_reason"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <com.kiun.modelcommonsupport.ui.views.ATextView
+        app:dataPath="[0].sysDictItemValue"
+        app:eventTag="1"
+        app:noDataGone="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <com.kiun.modelcommonsupport.ui.views.ATextView
+        app:dataPath="[1].sysDictItemValue"
+        app:eventTag="2"
+        app:noDataGone="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="2"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <com.kiun.modelcommonsupport.ui.views.ATextView
+        app:eventTag="3"
+        app:dataPath="[2].sysDictItemValue"
+        app:noDataGone="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="3"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <com.kiun.modelcommonsupport.ui.views.ATextView
+        app:dataPath="[3].sysDictItemValue"
+        app:eventTag="4"
+        app:noDataGone="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="4"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <com.phillipcalvin.iconbutton.IconButton
+        android:id="@+id/btn_apply_reason_close"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_background_shape_radius"
+        android:text="@string/close_dialog"
+        app:iconPadding="10dp"/>
+
+</LinearLayout>

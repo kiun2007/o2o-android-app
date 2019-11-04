@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="80dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/view_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bg_radius_gray"
+            android:padding="10dp">
+
+            <com.kiun.modelcommonsupport.ui.views.AImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:dataPath="bankIcon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/view_right"
+            android:layout_toRightOf="@+id/view_left"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="余额提现-到"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:dataPath="withdrawBankName"/>
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="16sp"-->
+                <!--android:text="("/>-->
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:dataPath="bankNo"
+                    app:maskType="maskBankCardTail"/>
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="16sp"-->
+                <!--android:text=")"/>-->
+            </LinearLayout>
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4月20日 16:20"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"
+                app:dataPath="applyTime"
+                app:format="[date][in]yyyyMMdd HHmmss[/in][out]yyyy-MM-dd HH:mm:ss[/out][/date]"/>
+        </LinearLayout>
+        <!--<View-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+        <LinearLayout
+            android:id="@+id/view_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2376"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:dataPath="withdrawMoney"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="元"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<com.kiun.modelcommonsupport.ui.views.ALinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--app:dataPath="status">-->
+
+    <com.kiun.modelcommonsupport.ui.views.ATextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/svg_radis_label"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="2376"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:dataPath="status"
+        app:format="[items][item]平台处理中,提现成功,提现失败[/item][color]9CD20B,9CD20B,FF0000[/color][/items]"/>
+
+    <!--</com.kiun.modelcommonsupport.ui.views.ALinearLayout>-->
+</RelativeLayout>

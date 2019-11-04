@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barNoback="true"
+        app:barTitle="@string/master_register"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/allContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_circle_solid"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#FFF"
+                        android:textSize="25sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="资料填写"
+                        android:textColor="#FF7d00"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shape_circle_solid"
+                            android:backgroundTint="#999"/>
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shape_circle_solid"
+                            android:backgroundTint="#999"/>
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shape_circle_solid"
+                            android:backgroundTint="#999"/>
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shape_circle_solid"
+                            android:backgroundTint="#999"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_circle_hollow"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="#999"
+                        android:textSize="25sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="审核"
+                        android:textAlignment="center"
+                        android:textColor="#999"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shape_circle_solid"
+                            android:backgroundTint="#999"/>
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shape_circle_solid"
+                            android:backgroundTint="#999"/>
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shape_circle_solid"
+                            android:backgroundTint="#999"/>
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shape_circle_solid"
+                            android:backgroundTint="#999"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_circle_hollow"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="#999"
+                        android:textSize="25sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="完成注册"
+                        android:textColor="#999"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#F4F4F4"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.kiun.modelcommonsupport.ui.views.UserEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="error_0"
+                    app:dataPath="masterName"
+                    app:editHint="@string/input_your_name"
+                    app:editMaxLength="6"
+                    app:editTitle="@string/name"
+                    app:editType="typeDefault"
+                    app:textHeight="60dp"
+                    app:topTitle="false"/>
+
+                <TextView
+                    android:id="@+id/txt_tips1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:drawableLeft="@drawable/icon_increase"
+                    android:drawablePadding="5dp"
+                    android:text="请核对重填"
+                    android:textColor="#FF7d00"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:tag="error_1">
+
+                <TextView
+                    android:id="@+id/text_register_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/register_sex"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/text_register_sex"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_register_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_button"
+                        android:checked="true"
+                        android:paddingLeft="3dp"
+                        android:text="男"
+                        android:textSize="16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_register_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:button="@drawable/radio_button"
+                        android:paddingLeft="3dp"
+                        android:text="女"
+                        android:textSize="16sp"/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/txt_tips2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:drawableLeft="@drawable/icon_increase"
+                    android:drawablePadding="5dp"
+                    android:text="请核对重填"
+                    android:textColor="#FF7d00"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.kiun.modelcommonsupport.ui.views.UserEditText
+                    android:id="@+id/et_idcardNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="error_2"
+                    app:dataPath="idCard"
+                    app:editHint="请输入身份证号码"
+                    app:editMaxLength="18"
+                    app:editTitle="@string/id_number"
+                    app:paramName="idcardNo"
+                    app:textHeight="60dp"
+                    app:topTitle="false"/>
+
+                <TextView
+                    android:id="@+id/txt_tips3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:drawableLeft="@drawable/icon_increase"
+                    android:drawablePadding="5dp"
+                    android:text="请核对重填"
+                    android:textColor="#FF7d00"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/city_cellview"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/cell_view_selector">
+
+                <TextView
+                    android:id="@+id/text_register_city"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/service_city"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:id="@+id/edit_register_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/text_register_city"
+                    android:background="@null"
+                    android:hint="@string/select_service_city"
+                    android:textColor="@color/light_black"
+                    android:textSize="16sp"
+                    app:dataPath="servicecityName"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/icon_next"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_skillcell"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/cell_view_selector">
+
+                <TextView
+                    android:id="@+id/text_register_job"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/my_job"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:id="@+id/edit_register_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_toRightOf="@+id/text_register_job"
+                    android:background="@null"
+                    android:hint="@string/select_job"
+                    android:textColor="@color/light_black"
+                    android:textSize="16sp"
+                    app:dataPath="profession"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/icon_next"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="10dp"
+                android:background="#F4F4F4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10sp"
+                android:text="@string/id_number_photo"
+                android:textColor="@color/light_black"
+                android:textSize="16sp"/>
+
+            <com.kiun.modelcommonsupport.ui.views.ARelativeLayout
+                android:id="@+id/rl_faceOfIdcard"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/background_shape_radius_gray"
+                android:tag="error_3"
+                app:cameraViewType="idcardView"
+                app:dataPath="faceOfIdcard"
+                app:hasImageId="@id/iv_faceOfIdcard"
+                app:iconViewId="@id/ic_faceOfIdcard"
+                app:infoViewId="@id/if_faceOfIdcard"
+                app:onlyPhoto="true"
+                app:radius="15dp"
+                app:ratio="0.45">
+
+                <com.kiun.modelcommonsupport.ui.views.AImageView
+                    android:id="@+id/iv_faceOfIdcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:id="@+id/ic_faceOfIdcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/icon_add"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/click_to_upload"
+                        android:textColor="@color/light_black"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/if_faceOfIdcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#88000000"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:tag="IMAGE_TAG"
+                        android:text="点击修改照片"
+                        android:textColor="#FF7D00"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/txt_tips4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_50"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/icon_increase"
+                        android:drawablePadding="5dp"
+                        android:text="请核对重填"
+                        android:textColor="#FF7d00"/>
+                </LinearLayout>
+
+            </com.kiun.modelcommonsupport.ui.views.ARelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10sp"
+                android:text="@string/id_number_photo_reverse"
+                android:textColor="@color/light_black"
+                android:textSize="16sp"/>
+
+            <com.kiun.modelcommonsupport.ui.views.ARelativeLayout
+                android:id="@+id/rl_oppositeOfIdCard"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/background_shape_radius_gray"
+                android:tag="error_4"
+                app:cameraViewType="idcardView"
+                app:dataPath="oppositeOfIdcard"
+                app:hasImageId="@id/iv_oppositeOfIdCard"
+                app:iconViewId="@id/ic_oppositeOfIdCard"
+                app:infoViewId="@id/if_oppositeOfIdCard"
+                app:onlyPhoto="true"
+                app:paramName="oppositeOfIdCard"
+                app:radius="15dp"
+                app:ratio="0.45">
+
+                <com.kiun.modelcommonsupport.ui.views.AImageView
+                    android:id="@+id/iv_oppositeOfIdCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:id="@+id/ic_oppositeOfIdCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/icon_add"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/click_to_upload"
+                        android:textColor="@color/light_black"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/if_oppositeOfIdCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#88000000"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:tag="IMAGE_TAG"
+                        android:text="点击修改照片"
+                        android:textColor="#FF7D00"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/txt_tips5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_50"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/icon_increase"
+                        android:drawablePadding="5dp"
+                        android:text="请核对重填"
+                        android:textColor="#FF7d00"/>
+                </LinearLayout>
+            </com.kiun.modelcommonsupport.ui.views.ARelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10sp"
+                android:text="@string/id_number_photo_in_hand"
+                android:textColor="@color/light_black"
+                android:textSize="16sp"/>
+
+            <com.kiun.modelcommonsupport.ui.views.ARelativeLayout
+                android:id="@+id/rl_handOfIdCard"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/background_shape_radius_gray"
+                android:tag="error_5"
+                app:cameraViewType="hardIdcardView"
+                app:dataPath="handOfIdCard"
+                app:hasImageId="@id/iv_handOfIdCard"
+                app:iconViewId="@id/ic_handOfIdCard"
+                app:infoViewId="@id/if_handOfIdCard"
+                app:onlyPhoto="true"
+                app:radius="15dp"
+                app:ratio="0.45">
+
+                <com.kiun.modelcommonsupport.ui.views.AImageView
+                    android:id="@+id/iv_handOfIdCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:id="@+id/ic_handOfIdCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/icon_add"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/click_to_upload"
+                        android:textColor="@color/light_black"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/if_handOfIdCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#88000000"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:tag="IMAGE_TAG"
+                        android:text="点击修改照片"
+                        android:textColor="#FF7D00"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/txt_tips6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_50"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/icon_increase"
+                        android:drawablePadding="5dp"
+                        android:text="请核对重填"
+                        android:textColor="#FF7d00"/>
+                </LinearLayout>
+            </com.kiun.modelcommonsupport.ui.views.ARelativeLayout>
+
+            <com.phillipcalvin.iconbutton.IconButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:background="@drawable/button_background_shape_radius"
+                android:text="@string/commit_to_verify"
+                android:textColor="#FFF"
+                app:iconPadding="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

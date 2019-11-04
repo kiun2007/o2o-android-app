@@ -1,0 +1,83 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '27.0.3'
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    //libs 引用aar文件时 需要一下代码
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api 'com.huxq17.xrefreshview:xrefreshview:3.6.9'
+    api 'com.android.support:recyclerview-v7:27.1.0'
+    //依赖下面的库
+    //    api 'com.github.bumptech.glide:glide:3.7.0'
+    //    compile 'cjt.library.wheel:camera:1.1.9'
+    api files('libs/commons-jexl-2.0.jar')
+    api 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //第三方按钮.
+    api 'com.githang:com-phillipcalvin-iconbutton:2.0.2'
+    //七牛云.
+    api 'com.qiniu:qiniu-android-sdk:7.3.+'
+    api 'com.squareup.okhttp3:okhttp:3.9.1'
+    api 'com.squareup.okio:okio:1.9.0'
+    compile 'com.yuyh.bubble:library:1.0.0'
+    //高德地图.
+    //3D地图so及jar
+    api 'com.amap.api:3dmap:latest.integration'
+    api 'com.amap.api:map2d:latest.integration'
+    //搜索功能
+    api 'com.amap.api:search:latest.integration'
+    //定位功能
+    api 'com.amap.api:location:latest.integration'
+    compile 'com.github.chrisbanes.photoview:library:1.2.3'
+    compile 'com.facebook.rebound:rebound:0.3.8'
+    compile 'com.github.bumptech.glide:glide:4.4.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile project(':easeui')
+
+    // 2018年9月13日16:21:16
+    api(name: 'customprogressview', ext: 'aar')
+    api(name: 'modulebase', ext: 'aar')
+    // *********************************************SmartRefreshLayout
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    api 'com.android.support:appcompat-v7:27.1.1'//版本 23以上（必须）
+
+    api 'com.getui:sdk:2.12.5.0'
+}

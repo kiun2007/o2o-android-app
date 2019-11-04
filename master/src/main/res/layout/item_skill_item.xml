@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerVertical="true"
+    android:gravity="center_vertical"
+    android:paddingLeft="15dp"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="5dp"
+    android:orientation="horizontal">
+    <com.kiun.modelcommonsupport.ui.views.ACheckBox
+        app:dataPath="."
+        app:dataTitle="professionName"
+        android:id="@+id/item_checkbox"
+        android:background="@drawable/selector_checkbox_bg"
+        android:text="@string/select_city"
+        android:textColor="@drawable/selector_checkbox_textcolor"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:button="@null"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</RelativeLayout>

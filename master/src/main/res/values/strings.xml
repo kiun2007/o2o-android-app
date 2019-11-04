@@ -1,0 +1,270 @@
+<resources>
+    <string name="app_name">哇屋师傅</string>
+
+    <!--首页-->
+    <string name="today_income">今日收入</string>
+
+    <string name="today_order">今日接单</string>
+
+    <string name="sum_order">累计接单</string>
+
+    <string name="suspend_receipt">暂停接单</string>
+
+    <string name="whether_suspend_receipt">是否暂停接单?</string>
+    <string name="suspend_receipt_tip">暂停接单系统将无法给您推送订单</string>
+
+    <string name="no_consider">暂不考虑</string>
+
+    <string name="suspend_sure">确定暂停</string>
+
+    <!--个人中心-->
+    <string name="personal_info">个人资料</string>
+
+    <string name="edit">编辑</string>
+
+    <string name="sex">性别</string>
+
+    <string name="birthday">生日</string>
+
+    <string name="phone_number">电话</string>
+
+    <string name="job">职业</string>
+
+    <string name="skill_in_skill">擅长技能</string>
+
+    <string name="personal_center">个人中心</string>
+
+    <string name="sum_score">综合评分</string>
+
+    <string name="performance_score">表现得分</string>
+
+    <string name="my_orders">我的订单</string>
+
+    <string name="my_wallet">我的钱包</string>
+
+    <string name="setting">设置</string>
+
+    <string name="owner_order">我的订单</string>
+    
+    <string name="send_to_headquarters">发给总部</string>
+
+    <string name="service_completion">服务完成</string>
+
+    <string name="delete_order">删除订单</string>
+
+    <string name="order_detail">订单详情</string>
+
+    <string name="look_more">阅读详细</string>
+
+    <string name="service_cost">服务费</string>
+
+    <string name="modify_cost">修改金额</string>
+
+    <string name="order_number">订单编号</string>
+
+    <string name="order_date">订单时间</string>
+
+    <string name="payment_state">支付状态</string>
+
+    <string name="payment_method">支付方式</string>
+
+    <string name="all_order">全部订单</string>
+
+    <string name="to_be_receipt">待收款</string>
+
+    <string name="after_sale_service">售后服务</string>
+
+    <string name="in_service">服务中</string>
+
+    <string name="completed">已完成</string>
+
+    <string name="my_balance">我的余额</string>
+
+    <string name="put_forward">提现</string>
+
+    <string name="my_band_card">我的银行卡</string>
+
+    <string name="my_bill">我的账单</string>
+
+    <string name="balance">余额提现</string>
+
+    <string name="balance_record">提现记录</string>
+
+    <string name="to_bank_card">到账银行卡</string>
+
+    <string name="amount_balance">提现金额</string>
+
+    <string name="sum_amount_balance">全部可提现余额¥</string>
+
+    <string name="all_balance">全部提现</string>
+
+    <string name="select_to_bank_card">选择到账银行卡</string>
+
+    <string name="apply_time">申请时间</string>
+
+    <string name="complete">完成</string>
+
+    <string name="balance_record_detail">记录详情</string>
+
+    <string name="current_state">当前状态</string>
+
+    <string name="item">事项</string>
+
+    <string name="balance_apply_time">提现申请时间</string>
+
+    <string name="balance_of_bank">提现银行</string>
+
+    <string name="balance_of_number">提现单号</string>
+
+    <string name="personal_band_card">我的银行卡</string>
+
+    <string name="add_band_card">验证手机号</string>
+
+    <string name="input_name">输入姓名</string>
+
+    <string name="add_band_card_number">添加银行卡号</string>
+
+    <string name="next_step">下一步</string>
+
+    <string name="write_card_info">填写银行卡及身份信息</string>
+
+    <string name="select_zone">请选择地区</string>
+
+    <string name="input_bank_phone_number">请输入银行预留手机号</string>
+
+    <string name="verify_phone">验证手机号</string>
+
+    <string name="bind_card_text">绑定银行卡需要短信确认，验证码已发送至手机：</string>
+
+    <string name="verify_code">验证码</string>
+
+    <string name="write_verify_code">填写验证码</string>
+
+    <string name="send_verify_code">发送验证码</string>
+
+    <string name="personal_bill">我的账单</string>
+
+    <string name="bill_detail">账单详情</string>
+
+    <string name="play_method">付款方式</string>
+
+    <string name="project_explain">项目说明</string>
+
+    <string name="bill_classic">账单分类</string>
+
+    <string name="create_time">创建时间</string>
+
+    <string name="order_id">订单号</string>
+
+    <!--接单-->
+
+    <string name="service_order">服务订单</string>
+
+    <string name="close">关闭</string>
+
+    <string name="cancel_order">取消订单</string>
+
+    <string name="start_chat">发起微聊</string>
+
+    <string name="call_phone">拨打电话</string>
+
+    <string name="service_cut_down">服务倒计时</string>
+
+    <string name="start_to_start">开始出发</string>
+
+    <string name="start_to_service">开始服务</string>
+
+    <string name="whether_cancel_order">是否取消订单？</string>
+
+    <string name="cancel_order_tip">取消订单将会扣10分</string>
+
+    <string name="cancel_order_sure">确定取消</string>
+
+    <string name="cancel_order_cancel">暂不取消</string>
+
+    <string name="cancel_order_reason">取消订单原因</string>
+
+    <string name="commit">提交</string>
+
+    <string name="service_expense">服务费用</string>
+
+    <string name="sure">确定</string>
+
+    <!--入住平台-->
+
+    <string name="master_register">师傅注册</string>
+
+    <string name="name">姓&#160;&#160;&#160;&#160;&#160;&#160;名</string>
+
+    <string name = "input_your_name">请输入您的姓名</string>
+
+    <string name="register_sex">性&#160;&#160;&#160;&#160;&#160;&#160;別</string>
+
+    <string name="id_number">身份证号</string>
+
+    <string name="input_id_number">请输入身份证号</string>
+
+    <string name="service_city">服务城市</string>
+
+    <string name="select_service_city">请选择服务城市</string>
+
+    <string name="my_job">我的职业</string>
+
+    <string name="select_job">请选择从事职业</string>
+
+    <string name="id_number_photo">身份证正面照片</string>
+
+    <string name="id_number_photo_reverse">身份证反面照片</string>
+
+    <string name="id_number_photo_in_hand">手持身份证照片</string>
+
+    <string name="click_to_upload">点击上传</string>
+
+    <string name="commit_to_verify">提交审核</string>
+
+    <string name="select_jobs">选择职业</string>
+
+    <string name="select_city">选择服务城市</string>
+
+    <string name="history_city">历史城市</string>
+
+    <string name="open_city">开通城市</string>
+
+    <string name="position_city">定位城市</string>
+
+    <string name="sex_male">男</string>
+
+    <string name="sex_female">女</string>
+
+    <string name="apply_job">申请职业</string>
+
+    <string name="audit_opinion">审核意见</string>
+
+    <string name="rewrite">重新填写</string>
+
+    <string name="change_phone_number">更换手机号</string>
+
+    <string name="login_password">登陆密码</string>
+
+    <string name="modify">修改</string>
+
+    <string name="about_ower">关于我们</string>
+
+    <string name="contact_service">联系客服</string>
+
+    <string name="clean_cache">清理缓存</string>
+
+    <string name="service_leader">服务指南</string>
+
+    <string name="loginout">退出登陆</string>
+
+    <string name="action_tags_order_all">[tags][tag],,0x3004|0x3005,0x3004|0x3006,0x3001|0x3002,,0x3003,0x3003,[/tag]
+        [icon],,icon_contact|icon_vehicle,icon_contact|icon_vehicle,icon_order_list_send_city|icon_complete,,icon_delete,icon_delete,[/icon]
+        [color],,0x3DA7F3|0xFF7d00,0x3DA7F3|0xFF7d00,0x3DA7F3|0xFF7d00,,0xFF7d00,0xFF7d00,[/color]
+        [title],,联系客户|开始上门,联系客户|开始服务,发送给总部|服务完成,,删除订单,删除订单,[/title][/tags]</string>
+
+    <string name="action_tags_order_all_after">[tags][tag]0x3004|0x3005,0x3004|0x3006,0x3002,[/tag]
+        [icon]icon_contact|icon_vehicle,icon_contact|icon_vehicle,icon_complete,[/icon]
+        [color]0x3DA7F3|0xFF7d00,0x3DA7F3|0xFF7d00,0xFF7d00,[/color]
+        [title]联系客户|开始上门,联系客户|开始服务,服务完成,[/title][/tags]</string>
+</resources>

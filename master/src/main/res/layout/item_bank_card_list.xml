@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_radius_gray"
+            android:padding="10dp">
+
+            <com.kiun.modelcommonsupport.ui.views.AImageView
+                android:id="@+id/item_bank_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:dataPath="bankLogo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中国银行"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:dataPath="bankName"/>
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="儲蓄卡"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:dataPath="cardType"
+                    app:format="[items][item]储蓄卡,借记卡[/item][/items]"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="尾号"
+                    android:textColor="@color/light_black"
+                    android:textSize="18sp"/>
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:id="@+id/item_bank_tail_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3362"
+                    android:textColor="@color/light_black"
+                    android:textSize="18sp"
+                    app:dataPath="cardNo"
+                    app:maskType="maskBankCardTail"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/line_horizontal_gray_style"
+        android:background="@color/font_gray"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+</LinearLayout>

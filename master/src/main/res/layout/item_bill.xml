@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/distance_10"
+        android:paddingTop="10dp">
+
+        <com.kiun.modelcommonsupport.ui.views.AImageView
+            android:id="@+id/image_item_bill_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerCrop"
+            android:src="@color/orange"
+            app:dataPath="logo"
+            app:radius="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/txt_money"
+            android:layout_toRightOf="@+id/image_item_bill_photo"
+            android:orientation="vertical">
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:id="@+id/text_bill_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="维修费"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:dataPath="feeName"/>
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:id="@+id/text_bill_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"
+                app:noDataGone="true"
+                app:dataPath="desc"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今天"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    app:dataPath="tranDate"
+                    app:format="[date][in]yyyyMMdd[/in][out]yyyy-MM-dd[/out][/date]"/>
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="11:25"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    app:dataPath="tranTime"
+                    app:format="[date][in]HHmmss[/in][out]HH:mm[/out][/date]"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.kiun.modelcommonsupport.ui.views.ATextView
+            android:id="@+id/txt_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="+560元"
+            android:tag="txt_money"
+            android:textColor="@color/orange"
+            android:textSize="22sp"
+            app:dataPath="tranAmt"
+            app:format="%.2f元"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999"/>
+</LinearLayout>

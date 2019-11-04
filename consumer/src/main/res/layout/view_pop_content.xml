@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_kuang_xhdpi"
+              android:orientation="vertical"
+              android:paddingBottom="10dp"
+              android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/action_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_bag"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="申请售后"
+        android:textColor="@color/orange"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/action_circles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_envelope"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="我要投诉"
+        android:textColor="@color/orange"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/action_water_drop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_delete"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="删除订单"
+        android:textColor="@color/orange"
+        android:textSize="14sp"/>
+
+</LinearLayout>

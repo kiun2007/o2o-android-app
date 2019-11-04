@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        android:id="@+id/id_balance_navigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barRightTitle="@string/balance_record"
+        app:barTitle="@string/balance" />
+
+    <View
+        android:id="@+id/id_balance_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/id_balance_navigator"
+        android:background="@color/gray" />
+
+    <com.xzxx.decorate.o2o.view.VerticalStepView
+        android:id="@+id/id_balance_stepview"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@+id/id_balance_view_top"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp" />
+
+    <View
+        android:id="@+id/id_balance_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/id_balance_stepview"
+        android:layout_marginTop="30dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_balance_view"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/amount_balance"
+                android:textColor="@color/light_black"
+                android:textSize="18sp" />
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:id="@+id/id_balance_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="¥1300"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:dataPath="withdrawMoney" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_balance_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/to_bank_card"
+                android:textColor="@color/light_black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:id="@+id/id_balance_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中国银行"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:dataPath="withdrawBankName" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="尾号"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        android:id="@+id/id_balance_tail_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3365"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:dataPath="bankNo"
+                        app:maskType="maskBankCardTail" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/apply_time"
+                android:textColor="@color/light_black"
+                android:textSize="18sp" />
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:id="@+id/id_balance_apply_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="05-19 15:27"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:dataPath="applyTime"
+                app:format="[date][in]yyyyMMddHHmmss[/in][out]MM-dd HH:mm[/out][/date]" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.phillipcalvin.iconbutton.IconButton
+        android:id="@+id/btn_balance_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_background_shape_radius"
+        android:text="@string/complete"
+        android:textColor="#FFF"
+        app:iconPadding="10dp" />
+
+</RelativeLayout>

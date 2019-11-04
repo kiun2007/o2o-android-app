@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_sheet_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/common_middle_padding"
+    android:textSize="@dimen/btn_text_size"
+    android:textColor="@color/main_color"
+    android:background="@drawable/bg_action_sheet_item"
+    android:layout_marginRight="@dimen/common_middle_padding"
+    android:layout_marginTop="@dimen/common_middle_padding"
+    android:layout_marginBottom="@dimen/common_middle_padding"
+    android:layout_marginLeft="@dimen/common_middle_padding"/>

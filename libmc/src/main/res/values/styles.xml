@@ -1,0 +1,43 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:actionMenuTextColor">#FF7D00</item>
+        <item name="checkNormalStyle">@style/AppCheckBox</item>
+        <item name="checkButtonStyle">@style/AppButtonCheckBox</item>
+    </style>
+    <style name="StartAppTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowBackground">@color/transparent</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AppCheckBox" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:textColor">#999</item>
+        <item name="android:button">@drawable/check_button</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+    <style name="AppCheckBoxOrange" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:textColor">#999</item>
+        <item name="android:button">@drawable/check_button_orange</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+    <style name="AppButtonCheckBox" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:textColor">@drawable/check_button_text</item>
+        <item name="android:background">@drawable/check_button_bg</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:height">30dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+</resources>

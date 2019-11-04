@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#ff821c</color>
+    <color name="btn_cancel_color">#999999</color>
+    <color name="btn_confirm_color">#303F9F</color>
+    <color name="cell_view_normal_color">#FFF</color>
+    <color name="cell_view_pressed_color">#F4F4F4</color>
+
+
+
+    <color name="rollout_colorPrimary">#3F51B5</color>
+    <color name="rollout_colorPrimaryDark">#303F9F</color>
+    <color name="rollout_colorAccent">#FF4081</color>
+    <color name="rollout_preview_bg" >#191919</color>
+    <color name="rollout_trans" >#00000000</color>
+</resources>

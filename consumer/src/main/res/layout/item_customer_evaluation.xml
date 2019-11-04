@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+
+        <com.kiun.modelcommonsupport.ui.views.AImageView
+            android:id="@+id/id_eva_iamge"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:src="@color/orange"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/id_eva_iamge"
+            android:orientation="vertical">
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赵小姐"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="洗衣机维修"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <com.xzxx.decorate.o2o.view.StarBar
+                android:id="@+id/starBar_attitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/display"
+                android:layout_gravity="center_vertical"
+                ratingbar:starCount="5"
+                ratingbar:starDistance="5dp"
+                ratingbar:starEmpty="@drawable/icon_bigstar_dark"
+                ratingbar:starFill="@drawable/icon_bigstar_bright"
+                ratingbar:starSize="15dp"/>
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:text="5月02日"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.kiun.modelcommonsupport.ui.views.ATextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="20dp"
+        android:text="评论内容"
+        android:textColor="@color/light_black"
+        android:textSize="14sp"/>
+
+</LinearLayout>

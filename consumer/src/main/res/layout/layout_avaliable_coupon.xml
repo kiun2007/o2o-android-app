@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.andview.refreshview.XRefreshView
+        android:background="#F4F4F4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.kiun.modelcommonsupport.ui.views.AListView
+            app:simpleLayout="@layout/item_tick"
+            app:modelClass="com.xzxx.decorate.o2o.bean.VoucherModel"
+            android:id="@+id/voucherListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.andview.refreshview.XRefreshView>
+</LinearLayout>

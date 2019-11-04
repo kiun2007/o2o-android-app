@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/masterInfoLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="18dp"
+        android:paddingRight="25dp"
+        android:background="@drawable/bg_map_bubble"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/marker_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="您的服务师傅在此处"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/orange"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="3dp"
+        android:background="@drawable/shape_radius_white"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.kiun.modelcommonsupport.ui.views.AImageView
+            app:radius="20dp"
+            android:id="@+id/marker_item_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</LinearLayout>

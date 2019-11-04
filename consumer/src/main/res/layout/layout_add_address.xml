@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        app:barTitle="@string/add_one_address"
+        app:barRightTitle="保存"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="20sp"
+        android:text="@string/contact"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20sp"
+            android:text="姓名："
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <com.kiun.modelcommonsupport.ui.views.AEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:background="@null"
+            android:singleLine="true"
+            android:maxLength="6"
+            android:focusableInTouchMode="true"
+            android:hint="请填写联系人姓名"
+            android:textSize="14sp"
+            app:dataPath="contactName"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18sp"
+            android:text="性別："
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="21dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="男"
+                android:tag="0"
+                android:button="@drawable/radio_button"
+                android:checked="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:button="@drawable/radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:tag="1"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18sp"
+            android:text="电话："
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <com.kiun.modelcommonsupport.ui.views.AEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:maxLength="11"
+            android:inputType="number"
+            android:focusableInTouchMode="true"
+            android:background="@null"
+            android:hint="请填写联系电话"
+            android:textSize="14sp"
+            app:dataPath="contactPhone"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/service_address"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+    <LinearLayout
+        android:id="@+id/ll_personal_address_zone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:text="所在地区："
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:id="@+id/ll_select_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_address"/>
+
+            <TextView
+                android:id="@+id/text_location"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:background="@null"
+                android:hint="点击选择"
+                android:textSize="14sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_next"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:id="@+id/ll_personal_address_detail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20sp"
+            android:text="详细地址："
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <com.kiun.modelcommonsupport.ui.views.AEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="街道，门牌号等"
+            android:textSize="14sp"
+            app:dataPath="addressDetail"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray">
+
+        <CheckBox
+            android:id="@+id/id_set_default_add_checkbox"
+            android:button="@drawable/radio_button"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:text="设为默认地址"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

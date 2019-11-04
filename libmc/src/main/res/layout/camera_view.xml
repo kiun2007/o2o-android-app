@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#000000"
+             android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <VideoView
+            android:id="@+id/video_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/image_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/cameraOptionLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/image_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_flash_on"/>
+        <ImageView
+            android:id="@+id/image_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_camera"/>
+    </LinearLayout>
+
+
+    <com.kiun.modelcommonsupport.camera.CaptureLayout
+        android:id="@+id/capture_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+    <LinearLayout
+        android:id="@+id/maskBackView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@drawable/bg_idcard_photo"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/rightTipTextView"
+                android:text="请将证件四角对齐在虚线框内"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:rotation="90"
+                android:layout_centerVertical="true"
+                android:transformPivotY="9dp"
+                android:transformPivotX="100dp"
+                android:textSize="14sp"
+                android:layout_marginRight="-70dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="200dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:id="@+id/bttomTipTextView"
+                android:text="请将本人身份证与本人正脸拍摄在照片内"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_height="18dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#000"
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:paddingLeft="25dp"
+                android:text="取消"
+                android:id="@+id/cancelButton"
+                android:textColor="#FFF"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:id="@+id/captureButton"
+                android:background="#00000000"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/button_shot_idcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                android:text="相册"
+                android:id="@+id/photoButton"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="25dp"
+                android:textColor="#FF7D00"
+                android:background="#00000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.kiun.modelcommonsupport.camera.FoucsView
+        android:id="@+id/fouce_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+</FrameLayout>

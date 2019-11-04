@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.xzxx.decorate.o2o.consumer"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+
+    <!--拍照相关权限-->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:name="com.xzxx.decorate.o2o.ConsumerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:allowBackup,android:icon,android:theme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.xzxx.decorate.o2o.consumer.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider"/>
+        </provider>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="59640a9310f3766d3c4d3bc8273d4ab8"/>
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1196180614228715#wawukeji-decrate-o2o-20180716"/>
+        <!-- 声明SDK所需的service SDK核心功能-->
+        <service
+            android:name="com.kiun.modelcommonsupport.hx.HXChatService"
+            android:exported="true"/>
+        <service
+            android:name="com.kiun.modelcommonsupport.hx.HXJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.kiun.modelcommonsupport.hx.HXMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.amap.api.location.APSService"/>
+        <!--师傅资料-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.MaterInformationActivity">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--主页面-->
+        <activity
+            android:name="com.kiun.modelcommonsupport.ui.rollout.activity.WelcomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartAppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN"/>-->
+            <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+
+        </activity>
+        <!--主页面-->
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoActionBarTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+        </activity>
+
+        <!--选择服务城市-->
+        <activity android:name="com.kiun.modelcommonsupport.controllers.SelectCityActivity"></activity>
+
+        <!--查找添加地址-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.AddToAddressActivity"></activity>
+
+        <!--添加地址-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.AddAddressActivity"></activity>
+
+        <!--地图选点-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.MapSearchActivity"></activity>
+
+        <!--我的地址-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.PersonalAddressActivity"></activity>
+
+        <!--发布订单-->
+        <!--等待服务-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.WaitServiceActivity">
+
+        </activity>
+
+        <!--预约下单-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.SubscribeOrderActivity"></activity>
+
+        <!--个人资料-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.PersonalInfoActivity"></activity>
+
+        <!--###################################登录注册若干###################################-->
+        <!--登陆-->
+        <activity android:name="com.kiun.modelcommonsupport.controllers.authority.LoginActivity"/>
+        <!--注册-->
+        <activity android:name="com.kiun.modelcommonsupport.controllers.authority.RegisterActivity"/>
+        <activity android:name="com.kiun.modelcommonsupport.controllers.authority.WebBaseActivity"/>
+        <!--设置登陆密码-->
+        <activity android:name="com.kiun.modelcommonsupport.controllers.authority.SettingLoginPasswodActivity"/>
+        <!--忘记密码-->
+        <activity android:name="com.kiun.modelcommonsupport.controllers.authority.ForgetPasswordActivity"/>
+        <!--验证码登录-->
+        <activity android:name="com.kiun.modelcommonsupport.controllers.authority.CodeLoginActivity"/>
+        <!--修改手机号旧手机验证-->
+        <activity android:name="com.kiun.modelcommonsupport.controllers.authority.ChangeMobieActivity"/>
+        <!--修改手机号新号码验证-->
+        <activity android:name="com.kiun.modelcommonsupport.controllers.authority.PhoneModifyActivity"/>
+        <!--设置-->
+        <activity android:name="com.kiun.modelcommonsupport.controllers.authority.SettingActivity"/>
+        <!--图片预览-->
+        <activity android:name="com.kiun.modelcommonsupport.ui.rollout.activity.RolloutPreviewActivity"/>
+        <!--拍照-->
+        <activity android:name="com.kiun.modelcommonsupport.controllers.CameraActivity"/>
+        <!--###################################登录注册若干###################################-->
+
+        <!--###################################环信相关###################################-->
+        <activity android:name="com.kiun.modelcommonsupport.hx.ChatActivity"/>
+        <activity android:name="com.kiun.modelcommonsupport.hx.HXMapActivity"/>
+        <activity android:name="com.kiun.modelcommonsupport.hx.ContactListActivity"/>
+        <activity android:name="com.kiun.modelcommonsupport.hx.VideoCallActivity"/>
+        <activity android:name="com.kiun.modelcommonsupport.hx.VoiceCallActivity" />
+        <activity android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"></activity>
+        <!--###################################环信相关###################################-->
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+
+        <!--新号码验证-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.NewMobileActivity"></activity>
+
+        <!--订单详情-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.OrderDetailActivity">
+
+        </activity>
+
+        <!--服务评价-->
+        <activity
+            android:name="com.xzxx.decorate.o2o.ui.ServiceEvaluationActivity"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+
+        <!--评价完成-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.EvaluationCompleteActivity">
+
+        </activity>
+
+        <!--我的评价-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.PersonalEvaluationActivity"></activity>
+
+        <!--申请售后服务-->
+        <activity
+            android:name="com.xzxx.decorate.o2o.ui.ApplyAfterServiceActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+
+        </activity>
+
+        <!--我要投诉-->
+        <activity
+            android:name="com.xzxx.decorate.o2o.ui.ComplaintActivity"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <!--我的优惠券-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.PersonalCouponActivity"></activity>
+
+        <!--项目说明-->
+        <activity android:name="com.xzxx.decorate.o2o.ui.ItemContentActivity"/>
+
+
+        <!--预约下单-->
+        <activity
+            android:name="com.xzxx.decorate.o2o.ui.OrderSubmitAvtivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+
+        <activity android:name="com.kiun.modelcommonsupport.controllers.VoucherActivity"/>
+        <activity android:name="com.xzxx.decorate.o2o.ui.InfomationActivity"/>
+        <activity android:name="com.xzxx.decorate.o2o.ui.OrderListActivity"/>
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"></activity>
+
+        <!-- 用户自定义服务继承自GTIntentService,作为SDK与APP桥梁服务,用来接收各种消息和命令回复-->
+        <service android:name="com.kiun.modelcommonsupport.push.DemoIntentService"/>
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.kiun.modelcommonsupport.push.DemoPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice">
+        </service>
+    </application>
+</manifest>

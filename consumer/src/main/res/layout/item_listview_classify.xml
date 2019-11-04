@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/id_item_ll_listView_classify"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <View
+        android:id="@+id/id_item_view_listview_classify"
+        android:layout_width="3dp"
+        android:layout_height="40dp"
+        android:background="#ff821c"/>
+
+    <com.kiun.modelcommonsupport.ui.views.ATextView
+        app:dataPath="firstItemName"
+        android:id="@+id/id_item_text_listView_classify"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textColor="@color/light_black"
+        android:textSize="14sp"/>
+
+</LinearLayout>

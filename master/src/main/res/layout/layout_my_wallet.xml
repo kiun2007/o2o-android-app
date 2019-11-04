@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        app:barTitle="@string/my_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon_coin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="@string/my_balance"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="¥"
+            android:textSize="12sp"/>
+        <com.kiun.modelcommonsupport.ui.views.ATextView
+            android:id="@+id/balanceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="0.0"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <com.phillipcalvin.iconbutton.IconButton
+        android:id="@+id/btn_my_wallet_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background_shape_radius"
+        android:textColor="#FFF"
+        android:text="@string/put_forward"
+        app:iconPadding="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/gray"/>
+
+    <com.kiun.modelcommonsupport.ui.views.ACellView
+        app:leftTitle="@string/my_band_card"
+        app:rightImage="@drawable/icon_card"
+        app:activityClass="com.xzxx.decorate.o2o.master.bank.PersonalBandCardActivity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <com.kiun.modelcommonsupport.ui.views.ACellView
+        app:leftTitle="@string/my_bill"
+        app:rightImage="@drawable/icon_page_wallet"
+        app:activityClass="com.xzxx.decorate.o2o.master.bank.PersonalBillActivity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+</LinearLayout>

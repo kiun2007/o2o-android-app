@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="152dp"
+    android:background="@color/gray"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.kiun.modelcommonsupport.ui.views.AImageView
+            app:dataPath="firstItemBannerImg"
+            android:layout_width="118dp"
+            android:layout_height="152dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.kiun.modelcommonsupport.ui.views.ARelativeLayoutNew
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:eventTag="5"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.kiun.modelcommonsupport.ui.views.ADrawView
+                            app:dataPath="indexValue"
+                            app:colors="0xFF0000FF,0xFFFF7D00,0xFF00FF00,0xFFFF0000"
+                            app:radius="2dp"
+                            android:id="@+id/home_split_first"
+                            android:layout_width="5dp"
+                            android:layout_height="19dp"/>
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            app:dataPath="firstItemName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#010101"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        app:dataPath="firstItemRemark"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/home_split_first"
+                        android:layout_marginTop="4dp"
+                        android:textColor="#999999"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/more"
+                        android:textColor="#999999"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/icon_next"/>
+                </LinearLayout>
+
+            </com.kiun.modelcommonsupport.ui.views.ARelativeLayoutNew>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp">
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        app:dataPath="secondItemInfos.[0].secondItemName"
+                        app:eventTag="1"
+                        android:id="@+id/home_door_install_tag_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="60dp"
+                        android:textColor="#232323"
+                        android:textSize="14dp"/>
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        app:dataPath="secondItemInfos.[2].secondItemName"
+                        app:eventTag="3"
+                        android:id="@+id/home_door_install_tag_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_door_install_tag_first"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#232323"
+                        android:textSize="14dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp">
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        app:dataPath="secondItemInfos.[1].secondItemName"
+                        app:eventTag="2"
+                        android:id="@+id/home_door_install_tag_third"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#232323"
+                        android:textSize="14dp"/>
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        app:dataPath="secondItemInfos.[3].secondItemName"
+                        app:eventTag="4"
+                        android:id="@+id/home_door_install_tag_forth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_door_install_tag_third"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#232323"
+                        android:textSize="14dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

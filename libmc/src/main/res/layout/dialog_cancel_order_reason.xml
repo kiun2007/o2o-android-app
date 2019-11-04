@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="取消订单原因"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+
+    <com.kiun.modelcommonsupport.ui.views.AItemLayout
+        app:dataPath="."
+        app:keyName="sysDictItemKey"
+        app:maxItem="1"
+        app:valueName="sysDictItemValue"
+        app:itemStyle="@style/AppCheckBox"
+        android:padding="15dp"
+        android:id="@+id/itemLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.kiun.modelcommonsupport.ui.views.AItemLayout>
+    <com.kiun.modelcommonsupport.ui.views.AEditText
+        app:hintIcon="@drawable/icon_pen"
+        app:hintText="请填写您取消的原因"
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="120dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_shape_radius_gray_fill"
+        android:gravity="top"
+        android:maxLines="50"
+        android:paddingLeft="20dp"
+        android:textSize="15sp"/>
+    <com.phillipcalvin.iconbutton.IconButton
+        android:id="@+id/btn_cancel_order_reason_commit"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFF"
+        android:background="@drawable/button_background_shape_radius"
+        android:text="提交"
+        app:iconPadding="10dp"/>
+
+</LinearLayout>

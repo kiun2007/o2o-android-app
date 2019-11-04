@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barTitle="更换手机号"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#F4F4F4">
+    </View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="当前手机号码"
+                    android:textColor="#000"
+                    android:textSize="16sp"/>
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:id="@+id/txt_phone"
+                    app:dataPath="phone"
+                    app:maskType="maskPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:textColor="#000"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+
+            <com.kiun.modelcommonsupport.ui.views.UserEditText
+                android:id="@+id/codeSendEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dataPath="code"
+                app:editHint="请输入验证码"
+                app:editTitle="验证码"
+                app:editType="typeCode"
+                app:icon="@drawable/svg_icon_shield"
+                app:matchError="请输入正确的验证码"
+                app:matchExp="[0-9]{4}"/>
+
+            <com.phillipcalvin.iconbutton.IconButton
+                android:id="@+id/id_change_mobile_next"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/button_background_shape_radius"
+                android:text="下一步"
+                android:textColor="#FFF"
+                app:iconPadding="10dp"/>
+
+            <TextView
+                android:id="@+id/txt_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:padding="15dp"
+                android:text="号码丢失联系客服"
+                android:textColor="#FF7D00"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/distance_15"
+                    android:text="@string/user_activity_change_phone3"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/font_size_normal"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="@dimen/distance_15"
+                    android:paddingRight="@dimen/distance_15"
+                    android:paddingBottom="@dimen/distance_15"
+                    android:text="@string/user_activity_change_phone4"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_little"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

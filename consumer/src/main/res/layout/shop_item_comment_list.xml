@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--android:background="@mipmap/bg_bank_card"-->
+    <!--<View-->
+    <!--android:id="@+id/view_line_item_top"-->
+    <!--style="@style/line_horizontal_gray_style_10"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/distance_15">
+
+        <ImageView
+            android:id="@+id/img_portrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@null"
+            android:src="@drawable/default_portrait_grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_bg_dialog"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/distance_15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/font_black"
+                        android:textSize="@dimen/font_size_middle"/>
+
+                    <com.xzxx.decorate.o2o.view.SimpleRatingBar
+                        android:id="@+id/ratingBar"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srb_borderColor="@color/transparent"
+                        app:srb_fillColor="@color/orange"
+                        app:srb_gravity="left"
+                        app:srb_isIndicator="true"
+                        app:srb_numberOfStars="5"
+                        app:srb_pressedBorderColor="@color/transparent"
+                        app:srb_pressedFillColor="@color/orange"
+                        app:srb_rating="0.5"
+                        app:srb_starBackgroundColor="@color/line_grey"
+                        app:srb_starBorderWidth="1"
+                        app:srb_starSize="18dp"
+
+                        app:srb_starsSeparation="@dimen/distance_5"
+                        app:srb_stepSize="0.5"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_size_little"/>
+
+                    <TextView
+                        android:id="@+id/txt_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_size_normal"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/distance_10"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_size_normal"/>
+                <!--图片或者视频-->
+                <LinearLayout
+                    android:id="@+id/view_res"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <com.amos.modulebase.widget.AutoSizeGridView
+                        android:id="@+id/gridView"
+                        style="@style/list_style"
+                        android:background="@color/white"
+                        android:headerDividersEnabled="false"
+                        android:horizontalSpacing="@dimen/distance_15"
+                        android:numColumns="3"
+                        android:verticalSpacing="@dimen/distance_15"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_horizontal_gray_style"
+        android:layout_marginLeft="@dimen/distance_15"
+        android:layout_marginRight="@dimen/distance_15"/>
+</LinearLayout>

@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.xzxx.decorate.o2o.master"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 15
+        versionName "1.1.6"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                GETUI_APP_ID : "iPj314g3hQ8uQm16MsC5lA",
+                GETUI_APP_KEY : "jzCVRPCL3LAZhE6PJdqF19",
+                GETUI_APP_SECRET : "e8bW6UOfeVAWihXkjf8Fq8"
+        ]
+
+        multiDexEnabled true
+        ndk {
+            abiFilters 'armeabi','armeabi-v7a','arm64-v8a','mips','mips64','x86','x86_64'
+        }
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'appkey'
+            keyPassword '123456'
+            storeFile file('../sjbookkey')
+            storePassword '123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            debuggable false
+            jniDebuggable false
+        }
+        debug {
+            signingConfig signingConfigs.config
+            debuggable true
+            jniDebuggable false
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    //libs 引用aar文件时 需要一下代码
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    // lint时候终止错误上报,防止编译的时候莫名的失败
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        disable 'InconsistentArrays', 'DefaultLocale', 'OldTargetApi', 'GradleOverrides', 'MissingTranslation', 'UnusedResources', 'GoogleAppIndexingWarning'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.youth.banner:banner:+'
+    //    api 'com.github.bumptech.glide:glide:3.7.0'
+    //3D地图so及jar
+    implementation 'com.amap.api:3dmap:latest.integration'
+    implementation 'com.amap.api:map2d:latest.integration'
+    //搜索功能
+    implementation 'com.amap.api:search:latest.integration'
+    //定位功能
+    implementation 'com.amap.api:location:latest.integration'
+    implementation 'com.githang:com-phillipcalvin-iconbutton:2.0.2'
+    implementation 'com.makeramen:roundedimageview:2.2.1'
+    implementation 'com.android.support:design:27.1.1'
+
+    implementation 'com.google.code.gson:gson:2.2.4'
+
+    implementation project(':libmc')
+
+    // 2018年9月13日16:21:16
+    implementation(name: 'customprogressview', ext: 'aar')
+    implementation(name: 'modulebase', ext: 'aar')
+    // *********************************************SmartRefreshLayout
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    implementation 'com.android.support:appcompat-v7:27.1.1'//版本 23以上（必须）
+}

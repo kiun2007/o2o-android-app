@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        app:barTitle="@string/my_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/id_master_photo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@color/orange"
+            app:riv_corner_radius="30dip"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            app:riv_tile_mode="repeat"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_master_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="王师傅"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/icon_order_num"/>
+
+                <TextView
+                    android:id="@+id/id_master_order_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="159单"
+                    android:textColor="@color/light_black"
+                    android:textSize="13sp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/gray"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/icon_star_bright"/>
+
+                <TextView
+                    android:id="@+id/id_master_star"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:text="4.9"
+                    android:textColor="@color/light_black"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_master_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="家电维修师"
+                    android:textColor="@color/light_black"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/sum_score"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="4.9"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <com.xzxx.decorate.o2o.view.StarBar
+            android:id="@+id/starBar_attitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/display"
+            android:layout_marginLeft="10dp"
+            ratingbar:starCount="5"
+            ratingbar:starDistance="5dp"
+            ratingbar:starEmpty="@drawable/icon_bigstar_dark"
+            ratingbar:starFill="@drawable/icon_bigstar_bright"
+            ratingbar:starSize="15dp"/>
+
+    </LinearLayout>
+
+    <com.kiun.modelcommonsupport.ui.views.FlowLayout
+        android:id="@+id/id_evaluation_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+    </com.kiun.modelcommonsupport.ui.views.FlowLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="服务非常不错，师傅技术非常好很不错"
+        android:textColor="@color/light_black"
+        android:textSize="15sp"/>
+
+    <com.phillipcalvin.iconbutton.IconButton
+        android:id="@+id/btn_evaluation_delete"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/button_background_shape_radius"
+        android:text="@string/delete"
+        app:iconPadding="10dp"/>
+
+</LinearLayout>

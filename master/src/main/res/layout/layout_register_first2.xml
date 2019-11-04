@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barNoback="true"
+        app:barTitle="@string/master_register"/>
+
+    <com.andview.refreshview.XRefreshView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="XRefreshView">
+
+        <com.andview.refreshview.XScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="XScrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shape_circle_solid"
+                            android:backgroundTint="#999"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#FFF"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="资料填写"
+                            android:textColor="#999"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true">
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/shape_circle_solid"
+                                android:backgroundTint="#999"/>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/shape_circle_solid"
+                                android:backgroundTint="#999"/>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/shape_circle_solid"
+                                android:backgroundTint="#999"/>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/shape_circle_solid"
+                                android:backgroundTint="#999"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shape_circle_solid"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="#FFF"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="审核"
+                            android:textAlignment="center"
+                            android:textColor="#FF7D00"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true">
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/shape_circle_solid"
+                                android:backgroundTint="#999"/>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/shape_circle_solid"
+                                android:backgroundTint="#999"/>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/shape_circle_solid"
+                                android:backgroundTint="#999"/>
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_marginRight="0dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/shape_circle_solid"
+                                android:backgroundTint="#999"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shape_circle_hollow"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="#999"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="完成注册"
+                            android:textColor="#999"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#F4F4F4"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/bg_pattern_upper"/>
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:id="@+id/text_register2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:dataPath="masterName"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/sex"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:dataPath="masterSex"
+                        app:format="[items][item]男,女[/item][/items]"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/id_number"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:dataPath="idCard"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/service_city"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:dataPath="servicecityName"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/apply_job"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:dataPath="profession"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/audit_opinion"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/waitAuditTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:text="资料正在审核中"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp"/>
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        android:id="@+id/auditAdvice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:text="资料正在审核中"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:dataPath="auditAdvice"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/auditStatusImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/bg_seal_red"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/bg_pattern_lower"/>
+
+                <com.phillipcalvin.iconbutton.IconButton
+                    android:id="@+id/btn_register2_rewrite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_background_shape_radius"
+                    android:text="@string/rewrite"
+                    android:textColor="#FFF"
+                    android:visibility="gone"
+                    app:iconPadding="10dp"/>
+            </LinearLayout>
+        </com.andview.refreshview.XScrollView>
+    </com.andview.refreshview.XRefreshView>
+</LinearLayout>

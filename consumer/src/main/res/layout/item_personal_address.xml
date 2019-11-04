@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#FFF"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/id_ll_default_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.kiun.modelcommonsupport.ui.views.ALinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                app:dataPath="isDefault"
+                app:goneFormula="=1">
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/background_dot"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/default_address"
+                    android:textColor="@color/orange"
+                    android:textSize="13sp"/>
+            </com.kiun.modelcommonsupport.ui.views.ALinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_ll_default_address"
+            android:layout_marginTop="0dp">
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:id="@+id/item_personal_address_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="120dp"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:dataPath="loaction"/>
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:id="@+id/id_item_personal_contact_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/item_personal_address_txt"
+                android:layout_below="@+id/item_personal_address_txt"
+                android:layout_marginTop="9dp"
+                android:text="王涛"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"
+                app:dataPath="contactName"/>
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:id="@+id/id_item_personal_contact_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/id_item_personal_contact_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/id_item_personal_contact_name"
+                android:text="15987809987"
+                android:textColor="@color/light_black"
+                android:textSize="15sp"
+                app:dataPath="contactPhone"/>
+
+            <LinearLayout
+                android:id="@+id/optionLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp">
+
+                <com.kiun.modelcommonsupport.ui.views.ALinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    app:eventTag="1">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/icon_dele_address"/>
+                </com.kiun.modelcommonsupport.ui.views.ALinearLayout>
+
+                <com.kiun.modelcommonsupport.ui.views.ALinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    app:eventTag="2">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/icon_pen"/>
+                </com.kiun.modelcommonsupport.ui.views.ALinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/view_mid"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#999"/>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/topPanel"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/xrefresh_ok"
+            android:id="@+id/iconImageView"
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:text="标题"
+            android:id="@+id/topTitleTextView"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/bottomImageView"
+            android:src="@drawable/xrefresh_ok"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/nameTxt"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/bottomImageView"
+            android:text="我的设备"
+            android:textColor="#3A3A3A"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/inputEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入"
+            android:layout_centerVertical="true"
+            android:textColor="#3A3A3A"
+            android:background="#00000000"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/nameTxt"
+            android:layout_toLeftOf="@+id/codeButton"/>
+        <CheckBox
+            android:id="@+id/eyeCheckBox"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/password_check_bg"
+            android:layout_marginBottom="5dp"
+            android:button="@null"
+            android:visibility="gone"
+            android:layout_width="25dp"
+            android:layout_height="18dp" />
+        <Button
+            android:id="@+id/codeButton"
+            android:text="发送验证码"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:textColor="#FF7D00"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/underline"
+        android:background="#DEDEDE"
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="1dp" />
+</LinearLayout>

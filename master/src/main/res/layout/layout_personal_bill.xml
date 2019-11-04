@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F4F4F4"
+              android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barTitle="@string/personal_bill"/>
+
+    <LinearLayout
+        android:id="@+id/billCellView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/monthTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="2018-09"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_arrow_open"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:id="@+id/txt_totalIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="收入¥0"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"
+                app:dataPath="totalIncome"/>
+
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                android:id="@+id/txt_totaloutCome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="提现¥0"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"
+                app:dataPath="totaloutCome"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.andview.refreshview.XRefreshView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="XRefreshView">
+
+        <!--<com.andview.refreshview.XScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:tag="XScrollView">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <com.kiun.modelcommonsupport.ui.views.AListViewNew
+            android:id="@+id/lv_personal_bill"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:secondPath="billList"
+            app:simpleLayout="@layout/item_bill"/>
+        <!--</LinearLayout>-->
+        <!--</com.andview.refreshview.XScrollView>-->
+    </com.andview.refreshview.XRefreshView>
+
+</LinearLayout>

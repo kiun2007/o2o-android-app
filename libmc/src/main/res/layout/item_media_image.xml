@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cell_view_selector"
+    android:orientation="vertical">
+    <com.kiun.modelcommonsupport.ui.views.ARelativeLayout
+        app:ratio="0.60"
+        app:radius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/itemImageView"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/viedoImageView"
+            android:src="@drawable/icon_video_button"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <ProgressBar
+            android:id="@+id/loadingBar"
+            android:layout_centerInParent="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <ImageView
+            android:id="@+id/img_del"
+            android:src="@drawable/icon_dele"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </com.kiun.modelcommonsupport.ui.views.ARelativeLayout>
+</LinearLayout>

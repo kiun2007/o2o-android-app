@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barTitle="设置"/>
+
+    <com.kiun.modelcommonsupport.ui.views.ACellView
+        android:id="@+id/phoneNumberCellView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:activityClass="com.kiun.modelcommonsupport.controllers.authority.ChangeMobieActivity"
+        app:eventTag="1"
+        app:leftTitle="@string/change_phone_number"
+        app:rightTitle="137****1579"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.kiun.modelcommonsupport.ui.views.ACellView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:activityClass="com.kiun.modelcommonsupport.controllers.authority.ForgetPasswordActivity"
+            app:eventTag="2"
+            app:leftTitle="@string/login_password"
+            app:rightTitle="@string/modify"/>
+
+        <TextView
+            android:id="@+id/txt_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_order_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.kiun.modelcommonsupport.ui.views.ACellView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:hideRight="true"
+            app:leftTitle="@string/order_service"/>
+
+        <ImageView
+            android:id="@+id/img_start"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:src="@drawable/checkbox_switch_off"/>
+    </RelativeLayout>
+
+    <com.kiun.modelcommonsupport.ui.views.ACellView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:eventTag="3"
+        app:leftTitle="@string/about_ower"/>
+
+    <com.kiun.modelcommonsupport.ui.views.ACellView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:eventTag="4"
+        app:leftTitle="@string/contact_service"/>
+
+    <com.kiun.modelcommonsupport.ui.views.ACellView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:eventTag="5"
+        app:leftTitle="@string/clean_cache"/>
+
+    <com.kiun.modelcommonsupport.ui.views.ACellView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:eventTag="6"
+        app:leftTitle="@string/service_leader"/>
+
+    <com.phillipcalvin.iconbutton.IconButton
+        android:id="@+id/id_cancel_order"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/button_background_shape_radius"
+        android:onClick="onClick"
+        android:text="@string/loginout"
+        android:textColor="#FFF"
+        android:textSize="14sp"
+        app:iconPadding="10dp"/>
+</LinearLayout>

@@ -1,0 +1,370 @@
+<resources>
+    <string name="app_name">哇屋</string>
+
+    <string name="home">首页</string>
+
+    <string name="service_category">服务分类</string>
+
+    <string name="classify">分类</string>
+
+    <string name="order">订单</string>
+
+    <string name="profile">我的</string> <string name="owner_order">我的订单</string>
+
+    <string name="red_package">新人红包</string>
+
+    <string name="city_sz">深圳</string>
+
+    <string name="present_card">礼品卡</string>
+
+    <string name="monthly_discount">每月特惠</string>
+
+    <string name="recommend_present">推荐有礼</string>
+
+    <string name="door_install">上门安装</string>
+
+    <string name="door_install_tip">省心金牌安装师</string>
+
+    <string name="more">更多</string>
+
+    <string name="bathroom">五金卫浴</string>
+
+    <string name="lamp">电路灯具</string>
+
+    <string name="air_install">空调安装</string>
+
+    <string name="hot_water">热水器</string>
+
+    <string name="appliance_repair">家电维修</string>
+
+    <string name="full_service_tip">尽心竭力为您服务</string>
+
+    <string name="select_city">选择服务城市</string>
+
+    <string name="add_to_address">添加地址</string>
+
+    <string name="position_city">定位城市</string>
+
+    <string name="history_city">历史城市</string>
+
+    <string name="open_city">开通城市</string>
+
+    <string name="personal_service_address">我的服务地址</string>
+
+    <string name="add_address">新增地址</string>
+
+    <string name="add_one_address">添加地址</string>
+
+    <string name="save_address">保存</string>
+
+    <string name="contact">联系人</string>
+
+    <string name="service_address">服务地址</string>
+
+    <string name="personal_address">我的地址</string>
+
+    <string name="edit">编辑</string>
+
+    <string name="explain">说明</string>
+
+    <string name="personal_coupon">我的优惠券</string>
+
+    <string name="default_address">默认地址</string>
+
+    <string name="release_order">发布订单</string>
+
+    <string name="cancel_order">取消订单</string>
+
+    <string name="close_page">关闭</string>
+
+    <string name="waiting">等待中</string>
+
+    <string name="finding_master">正在为您寻找师傅</string>
+
+    <string name="waiting_service">等待服务</string>
+
+    /*-----------------------订单模块---------------------------------------*/
+
+    <string name="order_detail">订单详情</string>
+
+    <string name="start_chat">发起微聊</string>
+
+    <string name="call_phone">拨打电话</string>
+
+    <string name="master_info">师傅资料</string>
+
+    <string name="all_order">全部订单</string>
+    <string name="order_to_be_pay">待支付</string>
+    <string name="to_be_evaluate">待评价</string>
+
+    <string name="after_sale_service">售后服务</string>
+
+    <string name="immediate_payment">立即支付</string>
+
+    <string name="progress_after_sale">售后进度</string>
+
+    <string name="commit_order">提交订单</string>
+
+    <string name="personal_center">个人中心</string>
+
+    <string name="to_be_service">待服务</string>
+
+    <string name="in_service">服务中</string>
+
+    <string name="to_be_pay">待支付</string>
+
+    <string name="completed">已完成</string>
+
+    <string name="applyed">已申请</string>
+    
+    <string name="in_produce">处理中</string>
+
+    <string name="refunds">退款中</string>
+
+    <string name="to_be_receipt">待接单</string>
+
+    <string name="to_be_door_to_door">待上门</string>
+
+    <string name="setting">设置</string>
+
+    <string name="ticket">优惠券</string>
+
+    <string name="subscribe_order">预约下单</string>
+
+    <string name="subscribe_time">预约时间</string>
+
+    <string name="order_pay">支付订单</string>
+
+    <string name="tip_the_tip">打赏小费</string>
+
+    <string name="just_to_pay">立即支付</string>
+
+    <string name="order_content">订单内容</string>
+
+    <string name="order_progress">订单进度</string>
+    <string name="order_progress1">售后进度</string>
+
+    <string name="look_more">查看更多</string>
+
+    <string name="contact_master">联系师傅</string>
+
+    <string name="repair_cost">维修费</string>
+
+    <string name="order_number">订单编号</string>
+
+    <string name="order_date">订单时间</string>
+
+    <string name="payment_state">支付状态</string>
+
+    <string name="payment_method">支付方式</string>
+
+    <string name="cost_detail">费用明细</string>
+
+    <string name="close_dialog">关闭</string>
+
+    <string name="service_cost">维修费</string>
+
+    <string name="door_cost">上门费</string>
+
+    <string name="tip_cost">打赏小费</string>
+
+    <string name="confirm">确定</string>
+
+    <string name="sum_cost">合计</string>
+
+    <string name="service_evaluation">服务评价</string>
+
+    <string name="service_attitude">服务态度</string>
+
+    <string name="service_quality">服务质量</string>
+
+    <string name="service_efficiency">服务效率</string>
+
+    <string name="image_to_master">对师傅的映像</string>
+
+    <string name="select_three">可选三个选项</string>
+
+    <string name="commit">提交</string>
+
+    <string name="evaluation_complete">评价完成</string>
+
+    <string name="sum_score">综合评分</string>
+
+    <string name="complete">完成</string>
+
+    <string name="delete">删除</string>
+
+    <string name="just_comment">立即评价</string>
+
+    <string name="lookup_comment">查看评价</string>
+
+    <string name="my_evaluation">我的评价</string>
+
+    <string name="whether_cancel_order">是否取消订单？</string>
+
+    <string name="cancel_order_in_48hours_free">48小时内取消订单免费</string>
+
+    <string name="cancel_order_sure">确定取消</string>
+
+    <string name="republish_order">重新发布</string>
+
+    <string name="cancel_order_no">暂不取消</string>
+
+    <string name="apply_after_service">申请售后服务</string>
+
+    <string name="service_type">服务类型</string>
+
+    <string name="apply_reason">申请原因</string>
+
+    <string name="cancel_order_reason">取消订单原因</string>
+
+    <string name="apply_after_service_success">售后申请成功！</string>
+
+    <string name="complaint_commit_success">投诉提交成功！</string>
+
+    <string name="commited_to_customer_service">已提交给客服，我们将与您联系</string>
+    
+    <string name="feedback_to_customer_service">已反馈给客服，我们将认真核实</string>
+
+    <string name="back_to_order">返回订单</string>
+
+    <string name="back">返回</string>
+
+    <string name="to_be_complaint">我要投诉</string>
+
+    <string name="sure_to_commit">确认提交</string>
+
+    <string name="cancel">取消</string>
+
+    <string name="apply_after_sale">申请售后</string>
+
+    <string name="delete_order">删除订单</string>
+
+    <string name="working_info">工作信息</string>
+
+    <string name="customer_evaluation">客户评价</string>
+
+    <string name="work_performance">工作表现</string>
+
+    <string name="praise_rate">好评率</string>
+
+    <string name="avg_evaluation">平均评分</string>
+
+    <string name="skill_in_skill">擅长技能</string>
+
+    /*-----------------------个人资料模块---------------------------------------*/
+
+    <string name="sex">性别</string>
+
+    <string name="male">先生</string>
+
+    <string name="female">女士</string>
+
+    <string name="age">年龄</string>
+
+    <string name="birthday">生日</string>
+
+    <string name="phone_number">电话</string>
+
+    <string name="job">职业</string>
+
+    <string name="if_call_service">是否呼叫客服？</string>
+
+    <string name="cancel_call">取消呼叫</string>
+
+    <string name="call_service">呼叫客服</string>
+
+    <string name="avliable_coupon">可用券</string>
+
+    <string name="unavliable_coupon">不可用</string>
+
+    <string name="invalie_coupon">已失效</string>
+
+    /*-----------------------登陆模块---------------------------------------*/
+
+    <string name="personal_info">个人资料</string>
+
+    <string name="login">登陆</string>
+
+    <string name="welcome">欢迎来到小装小修</string>
+
+    <string name="mobile_number">手机号</string>
+
+    <string name="password">密码</string>
+
+    <string name="verification">验证码</string>
+
+    <string name="forget_pwd">忘记密码？</string>
+
+    <string name="new_user_rigester">新用户注册</string>
+
+    <string name="verification_login">验证码登陆</string>
+
+    <string name="password_login">密码登陆</string>
+
+    <string name="send_verification">发送验证码</string>
+
+    <string name="user_register">用戶注冊</string>
+
+    <string name="input_verification">请输入验证码</string>
+
+    <string name="register_nextstep">下一步</string>
+
+    <string name="setting_login_password">设置登陆密码</string>
+
+    <string name="input_correct_length_password">请输入8-16位密码</string>
+
+    <string name="setting_login_password_confirm">确定</string>
+
+    <string name="register_success">您已注册成功</string>
+
+    <string name="just_to_login">立即去登陆</string>
+
+    <string name="forget_password">忘记密码</string>
+
+    <string name="number_unregister">该号码未注册</string>
+
+    <string name="check_input">请检测是否填写正确</string>
+
+    <string name="refill">重新填写</string>
+
+    <string name="modify_password_success">密码修改成功</string>
+
+    <string name="login_use_newpassword">请使用新密码登陆</string>
+
+    <string name="return_home_page">返回首页</string>
+
+    <string name="login_immediately">立即登陆</string>
+
+    <string name="change_mobile">更换手机号码</string>
+
+    <string name="lost_mobile_number">号码丢失联系客服</string>
+
+    <string name="new_mobile_virify">新号码验证</string>
+
+    <string name="confirm_ok">确认</string>
+
+    <string name="modify_mobile_success">号码修改成功</string>
+
+    <string name="action_tags_order_all">[tags][tag]0x300D|0x3007,0x300D,0x300D|0x3008,0x3008,0x3007,0x3007,0x3008|0x3009,0x3008|0x300A,[/tag]
+        [icon]order_icon_cance_blue|icon_wallet,order_icon_cance_blue,order_icon_cance_blue|icon_contact,icon_contact,icon_wallet,icon_wallet,icon_contact|icon_comment,icon_contact|icon_check,[/icon]
+        [color]0x3DA7F3|0xFF7d00,0x3DA7F3,0x3DA7F3|0x3DA7F3,0x3DA7F3,0xFF7d00,0xFF7d00,0x3DA7F3|0xFF7d00,0x3DA7F3|0xFF7d00,[/color]
+        [title]取消订单|立即支付,取消订单,取消订单|联系师傅,联系师傅,立即支付,立即支付,联系师傅|立即评价,联系师傅|查看评价,[/title][/tags]</string>
+
+    <string name="action_tags_order_all_after">[tags][tag]0x300B|0x300C,0x300B|0x300C,0x300B|0x3008,0x300B|0x3008,0x300B,,0x300B[/tag]
+        [icon]icon_list|icon_call,icon_list|icon_call,icon_list|icon_contact,icon_list|icon_contact,icon_list,,icon_list[/icon]
+        [color]0xFF7d00|0x3DA7F3,0xFF7d00|0x3DA7F3,0xFF7d00|0x3DA7F3,0xFF7d00|0x3DA7F3,0xFF7d00,,0xFF7d00[/color]
+        [title]售后进度|联系客服,售后进度|联系客服,售后进度|联系师傅,售后进度|联系师傅,售后进度,,售后进度[/title][/tags]</string>
+
+    <string name="order_status_all">[items][item]待支付,待接单,待上门,待服务,待支付,待支付,已完成,已完成,取消订单[/item][color]0072ff,FF7D00,FF7D00,FF7D00,0072ff,0072ff,888888,888888,888888[/color][/items]</string>
+    <string name="order_status_after_all">[items][item]已申请,退款中,待上门,待服务,服务中,已完成,未通过[/item][color]FF7D00,FF7D00,FF7D00,FF7D00,FF7D00,888888,888888[/color][/items]</string>
+    <string name="timepicker_year">年</string>
+    <string name="timepicker_month">月</string>
+    <string name="timepicker_day">日</string>
+    <string name="timepicker_hour">时</string>
+    <string name="timepicker_min">分</string>
+    <string name="timepicker_title">选择时间</string>
+    <string name="timepicker_finish">确认</string>
+    <string name="timepicker_title_default">设置</string>
+
+</resources>

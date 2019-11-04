@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#999999">
+        </View>
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:visibility="visible">
+
+            <com.kiun.modelcommonsupport.ui.views.ARelativeLayout
+                android:id="@+id/actionViewLeftBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/actionLeftIV"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom"/>
+
+                    <TextView
+                        android:id="@+id/actionLeftTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#FF7D00"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </com.kiun.modelcommonsupport.ui.views.ARelativeLayout>
+
+            <com.kiun.modelcommonsupport.ui.views.ARelativeLayout
+                android:id="@+id/actionViewRightBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="#999999">
+                </View>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/actionRightIV"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom"/>
+
+                    <TextView
+                        android:id="@+id/actionRightTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#FF7D00"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </com.kiun.modelcommonsupport.ui.views.ARelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--</LinearLayout>-->
+</LinearLayout>

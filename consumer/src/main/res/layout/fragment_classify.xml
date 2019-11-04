@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barNoback="true"
+        app:barTitle="@string/service_category"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.kiun.modelcommonsupport.ui.views.AListView
+            android:id="@+id/id_listView_classify"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:divider="@null"
+            app:simpleLayout="@layout/item_listview_classify">
+
+        </com.kiun.modelcommonsupport.ui.views.AListView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.kiun.modelcommonsupport.ui.views.AImageView
+                    android:id="@+id/id_image_adv"
+                    android:layout_width="match_parent"
+                    android:layout_height="81dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    app:dataPath="bannerImgUrl"/>
+
+                <com.kiun.modelcommonsupport.ui.views.FlowLayout
+                    android:id="@+id/id_flowLayout_classify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    app:lineSpacing="20dp">
+                </com.kiun.modelcommonsupport.ui.views.FlowLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

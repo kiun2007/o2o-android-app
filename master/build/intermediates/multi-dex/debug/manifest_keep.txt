@@ -1,0 +1,3 @@
+# Referenced at /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/build/intermediates/manifests/full/debug/AndroidManifest.xml:80
+-keep class com.xzxx.decorate.o2o.MasterApplication { <init>(...); }
+

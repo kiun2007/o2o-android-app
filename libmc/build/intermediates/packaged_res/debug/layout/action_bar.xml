@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:openwallet="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLinear"
+    android:orientation="vertical"
+    android:background="@drawable/svg_bg_navi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.kiun.modelcommonsupport.ui.views.StatusLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.kiun.modelcommonsupport.ui.views.StatusLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <LinearLayout
+            android:id="@+id/leftButtonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/backImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/svg_left_arrow" />
+            <TextView
+                android:id="@+id/leftTitleTextView"
+                android:textSize="16sp"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:text="标题"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="#FFF"
+            android:textSize="19sp" />
+        <LinearLayout
+            android:id="@+id/rightButtonLL"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/rightTitleTextView"
+                android:textSize="16sp"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:text="标题"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/rightImageView"
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:layout_height="30dp"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/unread_msg_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ease_unread_count_bg"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"/>
+    </RelativeLayout>
+</LinearLayout>

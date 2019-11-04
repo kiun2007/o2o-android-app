@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="vertical"
+              android:paddingBottom="5dp">
+
+    <com.kiun.modelcommonsupport.ui.views.ATextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/distance_10"
+        android:textColor="@color/black"
+        app:dataPath="name"/>
+
+    <View
+        style="@style/line_horizontal_gray_style"
+        android:layout_marginLeft="@dimen/distance_10"
+        android:layout_marginRight="@dimen/distance_10"/>
+</LinearLayout>

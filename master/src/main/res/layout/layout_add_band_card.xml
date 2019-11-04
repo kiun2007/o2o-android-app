@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        app:barTitle="添加银行卡"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/gray"/>
+    <com.kiun.modelcommonsupport.ui.views.UserEditText
+        app:topTitle="false"
+        app:textHeight="60dp"
+        app:editTitle="持卡人"
+        app:editHint="输入姓名"
+        app:editType="typeDefault"
+        app:matchExp="[\u4e00-\u9fa5]{2,4}"
+        app:matchError="持卡人姓名输入有误"
+        app:dataPath="cardHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.kiun.modelcommonsupport.ui.views.UserEditText
+        app:topTitle="false"
+        app:textHeight="60dp"
+        app:editTitle="卡号"
+        app:editHint="输入银行卡号"
+        app:editType="typePhone"
+        app:editMaxLength="19"
+        app:dataPath="cardNo"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.phillipcalvin.iconbutton.IconButton
+        android:id="@+id/btn_add_bank_card_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_background_shape_radius"
+        android:textColor="#FFF"
+        android:text="@string/next_step"
+        app:iconPadding="10dp"/>
+</LinearLayout>

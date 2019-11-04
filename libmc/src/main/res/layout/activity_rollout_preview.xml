@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_show_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".ui.rollout.activity.RolloutPreviewActivity">
+    <com.kiun.modelcommonsupport.ui.rollout.view.RolloutViewPager
+        android:id="@+id/bi_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </com.kiun.modelcommonsupport.ui.rollout.view.RolloutViewPager>
+</RelativeLayout>

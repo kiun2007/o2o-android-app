@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFF"
+              android:id="@+id/main"
+              android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barStyle="transparentBlack"
+        app:barTitle=""/>
+
+    <LinearLayout
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.kiun.modelcommonsupport.ui.views.AImageView
+                    app:srcName="mipmap:app_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+            <com.kiun.modelcommonsupport.ui.views.ATextView
+                app:srcName="app_name"
+                app:format="欢迎来到%s"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="10dp"
+                android:typeface="monospace"
+                android:textColor="#000"
+                android:textSize="28sp"/>
+
+            <com.kiun.modelcommonsupport.ui.views.UserEditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dataPath="account"
+                app:editHint="请输入手机号"
+                app:editTitle="手机号"
+                app:editType="typePhone"
+                app:icon="@drawable/svg_icon_phone"
+                app:matchError="请输入正确的手机号"
+                app:matchExp="^((13[0-9])|(14[5,7,9])|(15([0-3]|[5-9]))|(166)|(17[0,1,3,5,6,7,8])|(18[0-9])|(19[8|9]))\\d{8}$"/>
+
+            <com.kiun.modelcommonsupport.ui.views.UserEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:dataPath="password"
+                app:editHint="请输入密码"
+                app:editTitle="密码"
+                app:editType="typePassword"
+                app:icon="@drawable/svg_icon_lock"
+                app:matchError="请输入正确的密码"
+                app:matchExp="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/id_logit_forget_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="15dp"
+                    android:onClick="onClick"
+                    android:text="忘记密码?"
+                    android:textColor="#898989"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <com.phillipcalvin.iconbutton.IconButton
+                android:id="@+id/id_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_margin="15dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/button_background_shape_radius"
+                android:onClick="onClick"
+                android:text="登录"
+                android:textColor="#FFF"
+                app:iconPadding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:id="@+id/id_ll_login_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/id_login_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:onClick="onClick"
+                        android:text="新用户注册"
+                        android:textColor="#ff821c"
+                        android:textSize="14sp"
+                        tools:ignore="RtlCompat"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:background="#999"/>
+
+                    <TextView
+                        android:id="@+id/id_login_verification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:onClick="onClick"
+                        android:text="验证码登录"
+                        android:textColor="#ff821c"
+                        android:textSize="14sp"
+                        tools:ignore="RtlCompat"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

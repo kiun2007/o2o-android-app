@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barTitle="@string/service_evaluation"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/marsterInfoPanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <com.kiun.modelcommonsupport.ui.views.AImageView
+                    android:id="@+id/id_master_photo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@color/orange"
+                    app:dataPath="masterHeadImg"
+                    app:radius="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            android:id="@+id/id_master_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            app:dataPath="masterName"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/icon_order_num"/>
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            android:id="@+id/id_master_order_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text=""
+                            android:textColor="@color/light_black"
+                            android:textSize="12sp"
+                            app:dataPath="masterOrderNum"
+                            app:format="%s单"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/gray"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/icon_star_bright"/>
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            android:id="@+id/id_master_star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/light_black"
+                            android:textSize="12sp"
+                            app:dataPath="masterScore"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.kiun.modelcommonsupport.ui.views.ATextView
+                            android:id="@+id/id_master_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="家电维修师"
+                            android:textColor="@color/light_black"
+                            android:textSize="12sp"
+                            app:dataPath="masterProfession"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/service_attitude"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <com.xzxx.decorate.o2o.view.StarBar
+                    android:id="@+id/starBar_attitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/display"
+                    android:layout_marginLeft="60dp"
+                    app:dataPath="attutide"
+                    app:isTouch="true"
+                    app:starCount="5"
+                    app:starDistance="5dp"
+                    app:starEmpty="@drawable/icon_bigstar_dark"
+                    app:starFill="@drawable/icon_bigstar_bright"
+                    app:starSize="18dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/service_quality"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <com.xzxx.decorate.o2o.view.StarBar
+                    android:id="@+id/starBar_quality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/display"
+                    android:layout_marginLeft="60dp"
+                    app:dataPath="efficiency"
+                    app:isTouch="true"
+                    app:starCount="5"
+                    app:starDistance="5dp"
+                    app:starEmpty="@drawable/icon_bigstar_dark"
+                    app:starFill="@drawable/icon_bigstar_bright"
+                    app:starSize="18dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/service_efficiency"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <com.xzxx.decorate.o2o.view.StarBar
+                    android:id="@+id/starBar_efficiency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/display"
+                    android:layout_marginLeft="60dp"
+                    app:dataPath="quality"
+                    app:isTouch="true"
+                    app:starCount="5"
+                    app:starDistance="5dp"
+                    app:starEmpty="@drawable/icon_bigstar_dark"
+                    app:starFill="@drawable/icon_bigstar_bright"
+                    app:starSize="18dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/image_to_master"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/select_three"
+                android:textColor="@color/light_black"
+                android:textSize="12sp"/>
+
+            <com.kiun.modelcommonsupport.ui.views.AItemLayout
+                android:id="@+id/id_service_eva_flow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                app:dataPath="."
+                app:itemStyle="@style/AppButtonCheckBox"
+                app:itemStyleValue="styleButton"
+                app:keyName="sysDictItemKey"
+                app:lineItemNumber="3"
+                app:lineSpacing="5dp"
+                app:outArrayKey="impressionId"
+                app:matchError="至少选择一个印象"
+                app:paddingLR="5dp"
+                app:paramName="impression"
+                app:valueName="sysDictItemValue">
+            </com.kiun.modelcommonsupport.ui.views.AItemLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <com.kiun.modelcommonsupport.ui.views.AEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/background_shape_radius_gray"
+                    android:gravity="top"
+                    android:maxLines="50"
+                    android:padding="10dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="14sp"
+                    app:dataPath="content"
+                    app:hintIcon="@drawable/icon_pen"
+                    app:hintText="亲~请输入您的评价"/>
+
+                <com.kiun.modelcommonsupport.ui.views.MCRichEditView
+                    android:id="@+id/richEditView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="18dp"
+                    android:padding="15dp"
+                    android:verticalSpacing="18dp"
+                    app:captureButton="@id/captueButton"
+                    app:dataPath="orderFiles"
+                    app:showDel="true"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/captueButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_shoot"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/captueButton"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="晒单评价"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="可以录像和拍照哦"
+                            android:textColor="@color/light_black"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/register_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/cbox_selector"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="密名评价"/>
+            </RelativeLayout>
+
+            <com.phillipcalvin.iconbutton.IconButton
+                android:id="@+id/btn_evaluation_complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_background_shape_radius"
+                android:text="@string/commit"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                app:iconPadding="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

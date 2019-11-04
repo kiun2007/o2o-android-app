@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="dataPath" format="string"/>
+    <attr name="goneFormula" format="string"/>
+    <attr name="driveType" format="enum">
+        <enum name="netOnly" value="0"/>
+        <enum name="localOnly" value="1"/>
+        <enum name="localAndNet" value="2"/>
+        <enum name="userDrive" value="3"/>
+    </attr>
+    <attr name="eventTag" format="integer"/>
+    <attr name="dataBase" format="string"/>
+    <attr name="netUrl" format="string"/>
+    <attr name="driveClass" format="string"/>
+    <attr name="paramName" format="string"/>
+    <attr name="matchExp" format="string"/>
+    <attr name="matchError" format="string"/>
+    <attr name="ratio" format="float"/>
+    <attr name="srcName" format="string" />
+    <attr name="radius" format="dimension"/>
+    <attr name="paddingLR" format="dimension"/>
+    <attr name="simpleLayout" format="reference"/>
+    <attr name="secondLayout" format="reference"/>
+
+    <attr name="method" format="enum">
+        <enum name="post" value="0"/>
+        <enum name="get" value="1"/>
+    </attr>
+
+    <declare-styleable name="AButton">
+        <attr name="dataPath"/>
+        <attr name="netUrl"/>
+        <attr name="method"/>
+    </declare-styleable>
+
+    <declare-styleable name="ADrawView">
+        <attr name="dataPath" />
+        <attr name="radius" />
+        <attr name="colors" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="AEditText">
+        <attr name="dataPath"/>
+        <attr name="paramName"/>
+        <attr name="matchExp"/>
+        <attr name="matchError"/>
+        <attr name="hintIcon" format="reference"/>
+        <attr name="hintText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="AImageView">
+        <attr name="dataPath"/>
+        <attr name="eventTag"/>
+        <attr name="radius"/>
+        <attr name="isEditModel" format="boolean"/>
+        <attr name="srcName"/>
+    </declare-styleable>
+
+    <declare-styleable name="ALinearLayout">
+        <attr name="dataPath"/>
+        <attr name="checkMax" format="integer"/>
+        <attr name="goneFormula"/>
+        <attr name="ratio"/>
+        <attr name="radius"/>
+        <attr name="eventTag"/>
+        <attr name="tintColorLabel" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ARelativeLayout">
+        <attr name="dataPath"/>
+        <attr name="goneFormula"/>
+        <attr name="ratio"/>
+        <attr name="paramName"/>
+        <attr name="hasImageId" format="reference"/>
+        <attr name="iconViewId" format="reference"/>
+        <attr name="infoViewId" format="reference"/>
+        <attr name="onlyPhoto" format="boolean"/>
+        <attr name="cameraViewType" format="enum">
+            <enum name="normalView" value="0"/>
+            <enum name="idcardView" value="1"/>
+            <enum name="hardIdcardView" value="2"/>
+        </attr>
+        <attr name="radius"/>
+    </declare-styleable>
+
+    <declare-styleable name="ATextView">
+        <attr name="dataPath"/>
+        <attr name="paramName"/>
+        <attr name="eventTag"/>
+        <attr name="format"/>
+        <attr name="srcName"/>
+        <attr name="maskType" format="enum">
+            <enum name="maskPhone" value="0"/>
+            <enum name="maskBankCard" value="1"/>
+            <enum name="maskBankCardTail" value="2"/>
+        </attr>
+        <attr name="isHtml" format="boolean" />
+        <attr name="noDataGone" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="AListView">
+        <attr name="dataPath"/>
+        <attr name="simpleLayout"/>
+        <attr name="secondLayout"/>
+        <attr name="isAutoHeight" format="boolean"/>
+        <attr name="isNoDataHide" format="boolean"/>
+        <attr name="modelClass" format="string"/>
+        <attr name="bottomMargin" format="dimension"/>
+        <attr name="secondPath" format="string"/>
+        <attr name="numColumns" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SuperListView">
+        <attr name="adapterClass" format="string"/>
+        <attr name="simpleLayout"/>
+    </declare-styleable>
+
+    <declare-styleable name="UserEditText">
+        <attr name="dataPath"/>
+        <attr name="paramName"/>
+        <attr name="matchExp"/>
+        <attr name="matchError"/>
+        <attr name="icon" format="reference"/>
+        <attr name="editTitle" format="string"/>
+        <attr name="editHint" format="string"/>
+        <attr name="editMaxLength" format="integer"/>
+        <attr name="topTitle" format="boolean"/>
+        <attr name="editType" format="enum">
+            <enum name="typeDefault" value="0"/>
+            <enum name="typePassword" value="1"/>
+            <enum name="typeNumber" value="2"/>
+            <enum name="typeCode" value="3"/>
+            <enum name="typePhone" value="4"/>
+        </attr>
+        <attr name="editError" format="string"/>
+        <attr name="space" format="dimension"/>
+        <attr name="textHeight" format="dimension"/>
+        <attr name="notUnderline" format="boolean"/>
+        <attr name="limitValue" format="float"/>
+        <attr name="isWrapContent" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ActionButtonView">
+        <attr name="dataPath"/>
+        <attr name="startValue" format="integer"/>
+        <attr name="actionTags" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ACheckBox">
+        <attr name="dataPath"/>
+        <attr name="dataTitle"/>
+        <attr name="dataValue"/>
+    </declare-styleable>
+
+    <declare-styleable name="NavigatorBar">
+        <attr name="barTitle" format="string"/>
+        <attr name="barNoback" format="boolean"/>
+        <attr name="barStyle" format="enum">
+            <enum name="normalBar" value="0"/>
+            <enum name="transparentBar" value="1"/>
+            <enum name="transparentBlack" value="2"/>
+        </attr>
+        <attr name="barLeftTitle" format="string"/>
+        <attr name="barRightImage" format="reference"/>
+        <attr name="barRightTitle" format="string"/>
+        <attr name="barLeftImage" format="reference"/>
+        <attr name="titleImage" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="LoopView">
+        <attr name="lineColor" format="color"/>
+        <attr name="topBottomTextColor" format="color"/>
+        <attr name="centerTextColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="canLoop" format="boolean"/>
+        <attr name="initPosition" format="integer"/>
+        <attr name="drawItemCount" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ACellView">
+        <attr name="leftTitle" format="string"/>
+        <attr name="rightTitle" format="string"/>
+        <attr name="rightImage" format="reference"/>
+        <attr name="hideRight" format="boolean"/>
+        <attr name="lineType" format="enum">
+            <enum name="line" value="0"/>
+            <enum name="dashLine" value="1"/>
+            <enum name="none" value="2"/>
+        </attr>
+        <attr name="dataPath"/>
+        <attr name="eventTag"/>
+        <attr name="activityClass" format="string"/>
+        <attr name="paddingLR"/>
+        <attr name="rightTitleleft" format="dimension"/>
+    </declare-styleable>
+
+    <attr name="iconSize" format="dimension"/>
+    <attr name="iconMargin" format="dimension"/>
+    <attr name="iconSrc" format="reference"/>
+    <attr name="iconLeft" format="reference"/>
+    <attr name="iconRight" format="reference"/>
+    <attr name="duration_max" format="integer"/>
+
+    <declare-styleable name="JCameraView">
+        <attr name="iconSize"/>
+        <attr name="iconMargin"/>
+        <attr name="iconSrc"/>
+        <attr name="iconLeft"/>
+        <attr name="iconRight"/>
+        <attr name="duration_max"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="lineSpacing" format="dimension"/>
+        <attr name="maxLine" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="MCRichEditView">
+        <attr name="dataPath"/>
+        <attr name="showDel" format="boolean"/>
+        <attr name="captureButton" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="AItemLayout">
+        <attr name="dataPath"/>
+        <attr name="keyName" format="string"/>
+        <attr name="valueName" format="string"/>
+        <attr name="maxItem" format="integer"/>
+        <attr name="lineItemNumber" format="integer"/>
+        <attr name="itemStyle" format="reference"/>
+        <attr name="itemStyleValue" format="enum">
+            <enum name="styleNormal" value="0"/>
+            <enum name="styleButton" value="1"/>
+        </attr>
+        <attr name="lineSpacing" />
+        <attr name="paddingLR"/>
+        <attr name="paramName"/>
+        <attr name="separate" format="string"/>
+        <attr name="matchError"/>
+        <attr name="outArrayKey" format="string"/>
+    </declare-styleable>
+
+    <attr name="checkNormalStyle" format="reference"/>
+    <attr name="checkButtonStyle" format="reference"/>
+</resources>

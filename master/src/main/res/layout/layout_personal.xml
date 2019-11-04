@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/bg">
+            <com.kiun.modelcommonsupport.ui.views.NavigatorBar
+                app:barTitle="个人中心"
+                app:barStyle="transparentBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/shape_rectangle"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:onClick="onClick"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_radius_white"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.kiun.modelcommonsupport.ui.views.AImageView
+                    app:dataPath="masterHeadImg"
+                    app:radius="22dp"
+                    android:onClick="onClick"
+                    android:id="@+id/id_custer_photo"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="centerCrop"
+                    android:src="@color/orange" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    app:dataPath="masterName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18sp" />
+
+                <com.kiun.modelcommonsupport.ui.views.ATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:dataPath="masterProfession"
+                    android:textColor="@color/light_black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_star" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/sum_score"
+                        android:textColor="@color/light_black"
+                        android:textSize="15sp" />
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        app:dataPath="masterScore"
+                        app:format="%.1f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="0.0"
+                        android:textColor="@color/light_black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_medal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/performance_score"
+                        android:textColor="@color/light_black"
+                        android:textSize="15sp" />
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        app:dataPath="weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="0"
+                        android:textColor="@color/light_black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_page" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/sum_order"
+                        android:textColor="@color/light_black"
+                        android:textSize="15sp" />
+
+                    <com.kiun.modelcommonsupport.ui.views.ATextView
+                        app:dataPath="totalOrderNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="0"
+                        android:textColor="@color/light_black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.kiun.modelcommonsupport.ui.views.ACellView
+        app:leftTitle="@string/my_orders"
+        app:rightImage="@drawable/icon_order_num"
+        app:activityClass="com.xzxx.decorate.o2o.master.PersonalOrderActivity"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <com.kiun.modelcommonsupport.ui.views.ACellView
+        app:leftTitle="@string/my_wallet"
+        app:rightImage="@drawable/icon_wallet"
+        app:activityClass="com.xzxx.decorate.o2o.master.PersonalWalletActivity"
+        android:id="@+id/walletCellView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <com.kiun.modelcommonsupport.ui.views.ACellView
+        app:leftTitle="@string/setting"
+        app:activityClass="com.kiun.modelcommonsupport.controllers.authority.SettingActivity"
+        app:rightImage="@drawable/icon_set"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 1.Shape简介 -->
+    <!-- 属性： -->
+    <!-- <shape>  android:shape=["rectangle" | "oval" | "line" | "ring"] -->
+    <!-- 其中rectagle矩形，oval椭圆，line水平直线，ring环形 -->
+    <!-- android:useLevel boolean值，如果当做是LevelListDrawable使用时值为true，否则为false -->
+
+
+    <!-- <shape>中子节点的常用属性： -->
+
+
+    <!-- 1渐变 -->
+    <!-- <gradient> -->
+    <!-- android:startColor  起始颜色 -->
+    <!-- android:endColor  结束颜色 -->
+   <!-- 渐变  android:angle  渐变角度.0从左到右，90表示从下到上，数值为45的整数倍默认为0； -->
+    <!-- android:type  渐变的样式 liner线性渐变 radial环形渐变 sweep -->
+
+
+    <!-- 2填充 -->
+    <!-- <solid > -->
+    <!-- android:color  填充的颜色 -->
+
+
+    <!-- 3描边 -->
+    <!-- <stroke > -->
+    <!-- android:width 描边的宽度 -->
+    <!-- android:color 描边的颜色 -->
+    <!-- android:dashWidth 表示'-'横线的宽度 -->
+    <!-- android:dashGap 表示'-'横线之间的距离 -->
+
+
+    <!-- 4圆角 -->
+    <!-- <corners > -->
+    <!-- android:radius  圆角的半径 值越大角越圆 -->
+    <!-- android:topRightRadius  右上圆角半径 -->
+    <!-- android:bottomLeftRadius 右下圆角角半径 -->
+    <!-- android:topLeftRadius 左上圆角半径 -->
+    <!-- android:bottomRightRadius 左下圆角半径 -->
+
+
+    <!-- 触摸模式下单击时的背景图片 -->
+    <item android:state_pressed="true"> <shape>
+
+        <!-- 2填充 -->
+        <solid android:color="@color/black_5"/>
+        <!-- 4圆角 -->
+        <corners android:radius="30dp"/>
+        <!-- 3描边 -->
+        <stroke android:width="1px" android:color="@color/black_35"/>
+    </shape></item>
+    <!-- 默认 -->
+    <item> <shape>
+
+        <!-- 2填充 -->
+        <solid android:color="@color/black_30"/>
+        <!-- 4圆角 -->
+        <corners android:radius="30dp"/>
+        <!-- 3描边 -->
+        <stroke android:width="1px" android:color="@color/black_35"/>
+    </shape></item>
+
+</selector>

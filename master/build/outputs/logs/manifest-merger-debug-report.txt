@@ -1,0 +1,910 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:2:1-260:12
+INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:2:1-260:12
+INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:2:1-260:12
+INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:2:1-260:12
+MERGED from [com.android.support:multidex:1.0.2] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/992b45a68ad6cdda3135432210788a05/AndroidManifest.xml:17:1-22:12
+MERGED from [:libmc] /Users/kiun2007/Documents/application/git/android/o2o-android-app/libmc/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-13:12
+MERGED from [:easeui] /Users/kiun2007/Documents/application/git/android/o2o-android-app/easeui/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:design:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/0a5ef9313469dff3449149d8752e28a1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.yuyh.bubble:library:1.0.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/9719a63e24ecc7c9af90eb4545098267/AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7a953206d7378e2c45c972d09e3fcdd7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/8dd8bf0716543460b0b1a06c8af0d01e/AndroidManifest.xml:2:1-11:12
+MERGED from [com.youth.banner:banner:1.4.10] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/banner-1.4.10.aar/ba3de41a4bff30971928c024d2794192/AndroidManifest.xml:2:1-11:12
+MERGED from [com.githang:com-phillipcalvin-iconbutton:2.0.2] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/com-phillipcalvin-iconbutton-2.0.2.aar/836cdf109645a81a99b3004c64589bc4/AndroidManifest.xml:2:1-13:12
+MERGED from [com.makeramen:roundedimageview:2.2.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/roundedimageview-2.2.1.aar/8e3710d66725107066c2d3b6aff443c8/AndroidManifest.xml:2:1-9:12
+MERGED from [:customprogressview:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/customprogressview.aar/0facef835c3b2675239fe4098c10173a/AndroidManifest.xml:2:1-11:12
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:2:1-308:12
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/SmartRefreshLayout-1.1.0-alpha-14.aar/41e07de9228a886ed06d86c538805d48/AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:transition:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/a75f6b77344e1a2f4a1ed9587aaa175e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/842c02f38eba3d1c646e3247c90bd8fa/AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/87e91b5d9e47b6b3f1ce36cb1d4a8eb9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/e56b17d34630e7a80d4ffd2619b85b8b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.chrisbanes.photoview:library:1.2.3] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/library-1.2.3.aar/5c86da427e86273ff563c25d0d15b799/AndroidManifest.xml:1:92-6:12
+MERGED from [com.google.android.gms:play-services-base:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.0.aar/323a34296337017d04a4b966ee6d0566/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.4.0.aar/2acbd599b23ea9527bc1f951d3e95dae/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.4.0.aar/e8c8ebe0b287f160eb9994fb2ff84b2f/AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/9fe0aeece4f4b7a56806e58483feb392/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/5df769c899f14aa9bf437b6af99fe5d8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/faa5cef6fa262e2ec0f3abdce7de309b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/a3fb6d3edc8947510939dbb73f6607ca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/9e316a875411961055b14ec7019a0d23/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/f53895c55aff8eab01e7bf2b48197e6f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/44d4156aad37a56e5be402cbfd203e68/AndroidManifest.xml:17:1-22:12
+MERGED from [com.huxq17.xrefreshview:xrefreshview:3.6.9] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/xrefreshview-3.6.9.aar/cde6cdf63f148b0fb968f93dfdd47272/AndroidManifest.xml:2:1-12:12
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:2:1-84:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fc41f719511b5815982283a79f3ca451/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/52cedd242834a2d49168ca6e3eeab202/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1fa40ea74c19cc3b6fa725f2a48073b7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/a6c300c05b2d26e58770bbe00fc10eec/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:2:1-260:12
+INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:2:1-260:12
+INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:2:1-260:12
+	package
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:2:11-49
+		INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+		INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:2:1-260:12
+		INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:4:11-57
+	android:versionCode
+		INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:2:1-260:12
+		INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:3:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:6:22-77
+uses-permission#android.permission.INTERNET
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:9:5-66
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:61:5-67
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:61:5-67
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:11:5-67
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:9:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:11:5-80
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:79:5-81
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:79:5-81
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:18:5-81
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:11:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:13:5-78
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:48:5-79
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:48:5-79
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:13:5-79
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:13:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:15:5-75
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:46:5-76
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:46:5-76
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:15:5-76
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:15:22-73
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:17:5-74
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:12:5-75
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:12:5-75
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:17:22-72
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:19:5-80
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:75:5-81
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:75:5-81
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:19:22-78
+uses-permission#android.permission.CHANGE_WIFI_STATE.
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:21:5-76
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:21:22-74
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:26:5-78
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:77:5-79
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:77:5-79
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:26:22-76
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:29:5-88
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:29:22-86
+uses-permission#android.permission.FLASHLIGHT
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:31:5-68
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:52:5-69
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:52:5-69
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:31:22-66
+uses-feature#android.hardware.camera
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:33:5-59
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:90:5-60
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:90:5-60
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:33:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:34:5-69
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:91:5-70
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:91:5-70
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:34:19-67
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:36:5-70
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:36:22-68
+uses-permission#android.permission.CAMERA
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:37:5-64
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:73:5-65
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:73:5-65
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:37:22-62
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:39:5-72
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:57:5-73
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:57:5-73
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:39:22-70
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:42:5-65
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:54:5-66
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:54:5-66
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:19:5-66
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:19:5-66
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:42:22-63
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:48:5-83
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:48:22-81
+uses-permission#android.permission.GET_TASKS
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:50:5-67
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:20:5-68
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:20:5-68
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:50:22-65
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:52:5-75
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:50:5-76
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:50:5-76
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:14:5-76
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:14:5-76
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:52:22-73
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:53:5-67
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:59:5-68
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:59:5-68
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:16:5-68
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:16:5-68
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:53:22-65
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:54:5-79
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:54:22-77
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:56:5-80
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:17:5-81
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:56:22-78
+application
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:58:5-259:19
+MERGED from [com.yuyh.bubble:library:1.0.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/9719a63e24ecc7c9af90eb4545098267/AndroidManifest.xml:11:5-15:19
+MERGED from [com.yuyh.bubble:library:1.0.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/9719a63e24ecc7c9af90eb4545098267/AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/8dd8bf0716543460b0b1a06c8af0d01e/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/8dd8bf0716543460b0b1a06c8af0d01e/AndroidManifest.xml:9:5-20
+MERGED from [com.githang:com-phillipcalvin-iconbutton:2.0.2] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/com-phillipcalvin-iconbutton-2.0.2.aar/836cdf109645a81a99b3004c64589bc4/AndroidManifest.xml:11:5-20
+MERGED from [com.githang:com-phillipcalvin-iconbutton:2.0.2] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/com-phillipcalvin-iconbutton-2.0.2.aar/836cdf109645a81a99b3004c64589bc4/AndroidManifest.xml:11:5-20
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:101:5-306:19
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:101:5-306:19
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/SmartRefreshLayout-1.1.0-alpha-14.aar/41e07de9228a886ed06d86c538805d48/AndroidManifest.xml:11:5-15:19
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/SmartRefreshLayout-1.1.0-alpha-14.aar/41e07de9228a886ed06d86c538805d48/AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.chrisbanes.photoview:library:1.2.3] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/library-1.2.3.aar/5c86da427e86273ff563c25d0d15b799/AndroidManifest.xml:4:5-81
+MERGED from [com.github.chrisbanes.photoview:library:1.2.3] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/library-1.2.3.aar/5c86da427e86273ff563c25d0d15b799/AndroidManifest.xml:4:5-81
+MERGED from [com.google.android.gms:play-services-base:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.0.aar/323a34296337017d04a4b966ee6d0566/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.0.aar/323a34296337017d04a4b966ee6d0566/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.4.0.aar/2acbd599b23ea9527bc1f951d3e95dae/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.4.0.aar/2acbd599b23ea9527bc1f951d3e95dae/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.4.0.aar/e8c8ebe0b287f160eb9994fb2ff84b2f/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.4.0.aar/e8c8ebe0b287f160eb9994fb2ff84b2f/AndroidManifest.xml:19:5-21:19
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:32:5-82:19
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:32:5-82:19
+	android:supportsRtl
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:64:9-35
+	android:label
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:62:9-41
+	android:hardwareAccelerated
+		ADDED from [com.github.chrisbanes.photoview:library:1.2.3] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/library-1.2.3.aar/5c86da427e86273ff563c25d0d15b799/AndroidManifest.xml:4:45-79
+	android:roundIcon
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:63:9-45
+	android:icon
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:61:9-40
+		REJECTED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:103:9-47
+	android:allowBackup
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:60:9-35
+		REJECTED from [com.yuyh.bubble:library:1.0.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/9719a63e24ecc7c9af90eb4545098267/AndroidManifest.xml:12:9-35
+		REJECTED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:102:9-36
+		REJECTED from [com.github.chrisbanes.photoview:library:1.2.3] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/library-1.2.3.aar/5c86da427e86273ff563c25d0d15b799/AndroidManifest.xml:4:18-44
+	android:theme
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:65:9-40
+	tools:replace
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:66:9-71
+	android:usesCleartextTraffic
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:32:18-53
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:59:9-63
+provider#android.support.v4.content.FileProvider
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:67:9-76:20
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:113:9-121:20
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:113:9-121:20
+	android:grantUriPermissions
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:71:13-47
+	android:authorities
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:69:13-76
+		REJECTED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:115:13-67
+	android:exported
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:70:13-37
+	tools:replace
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:72:13-48
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:68:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:73:13-75:56
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:118:13-120:57
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:118:13-120:57
+	android:resource
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:75:17-54
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:74:17-67
+meta-data#com.amap.api.v2.apikey
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:78:9-80:63
+	android:value
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:80:13-61
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:79:13-50
+service#com.amap.api.location.APSService
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:81:9-76
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:81:18-65
+meta-data#EASEMOB_APPKEY
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:84:9-86:77
+	android:value
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:86:13-75
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:85:13-42
+service#com.kiun.modelcommonsupport.hx.HXChatService
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:88:9-90:38
+	android:exported
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:90:13-36
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:89:13-72
+service#com.kiun.modelcommonsupport.hx.HXJobService
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:91:9-95:15
+	android:exported
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:93:13-36
+	android:permission
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:94:13-69
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:92:13-71
+receiver#com.kiun.modelcommonsupport.hx.HXMonitorReceiver
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:97:9-107:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:97:19-82
+intent-filter#action:name:android.intent.action.PACKAGE_REMOVED+data:scheme:package
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:98:13-101:29
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:99:17-79
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:99:25-77
+data
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:100:17-49
+	android:scheme
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:100:23-47
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.USER_PRESENT
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:103:13-106:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:104:17-78
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:104:25-76
+action#android.intent.action.USER_PRESENT
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:105:17-76
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:105:25-74
+activity#com.kiun.modelcommonsupport.ui.rollout.activity.WelcomeActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:109:9-121:20
+	android:screenOrientation
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:113:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:114:13-67
+	android:configChanges
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:112:13-59
+	android:theme
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:111:13-49
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:110:13-91
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:116:13-119:29
+action#android.intent.action.MAIN
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:117:17-68
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:117:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:118:17-76
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:118:27-74
+activity#com.xzxx.decorate.o2o.master.MainActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:123:9-124:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:123:19-47
+activity#com.xzxx.decorate.o2o.master.PersonalCenterActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:127:9-128:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:127:19-57
+activity#com.xzxx.decorate.o2o.master.PersonalInfoActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:131:9-133:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:131:19-55
+activity#com.xzxx.decorate.o2o.master.PersonalOrderActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:136:9-58
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:136:19-56
+activity#com.xzxx.decorate.o2o.master.PoiSearchActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:137:9-139:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:137:19-52
+activity#com.xzxx.decorate.o2o.master.OrderDetailActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:142:9-145:20
+	android:hardwareAccelerated
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:144:13-47
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:143:13-48
+activity#com.xzxx.decorate.o2o.master.PersonalWalletActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:148:9-149:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:148:19-57
+activity#com.xzxx.decorate.o2o.master.BalanceActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:152:9-153:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:152:19-50
+activity#com.xzxx.decorate.o2o.master.BalanceRecordActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:156:9-157:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:156:19-56
+activity#com.xzxx.decorate.o2o.master.BalanceProgressActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:160:9-161:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:160:19-58
+activity#com.xzxx.decorate.o2o.master.BalanceRecordDetailActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:164:9-165:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:164:19-62
+activity#com.xzxx.decorate.o2o.master.bank.PersonalBandCardActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:168:9-169:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:168:19-64
+activity#com.xzxx.decorate.o2o.master.bank.AddBandCardActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:172:9-173:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:172:19-59
+activity#com.xzxx.decorate.o2o.master.WriteCardInfoActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:176:9-177:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:176:19-56
+activity#com.xzxx.decorate.o2o.master.VerifyPhoneNumberActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:180:9-181:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:180:19-60
+activity#com.xzxx.decorate.o2o.master.bank.PersonalBillActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:184:9-185:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:184:19-60
+activity#com.xzxx.decorate.o2o.master.BillDetailActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:188:9-190:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:188:19-53
+activity#com.xzxx.decorate.o2o.master.ServiceOrderActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:193:9-195:20
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:193:19-55
+activity#com.xzxx.decorate.o2o.master.RegisterFirstActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:198:9-68
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:198:19-56
+activity#com.xzxx.decorate.o2o.master.RegisterSecondActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:201:9-69
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:201:19-57
+activity#com.kiun.modelcommonsupport.controllers.authority.LoginActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:207:9-213:20
+	android:launchMode
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:209:13-44
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:208:13-91
+meta-data#noBackBar
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:210:13-212:36
+	android:value
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:212:17-34
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:211:17-41
+activity#com.kiun.modelcommonsupport.controllers.authority.RegisterActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:215:9-102
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:215:19-100
+activity#com.kiun.modelcommonsupport.controllers.authority.WebBaseActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:216:9-101
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:216:19-99
+activity#com.kiun.modelcommonsupport.controllers.authority.SettingLoginPasswodActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:218:9-113
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:218:19-111
+activity#com.kiun.modelcommonsupport.controllers.authority.ForgetPasswordActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:220:9-108
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:220:19-106
+activity#com.kiun.modelcommonsupport.controllers.authority.CodeLoginActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:222:9-103
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:222:19-101
+activity#com.kiun.modelcommonsupport.controllers.authority.ChangeMobieActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:224:9-105
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:224:19-103
+activity#com.kiun.modelcommonsupport.controllers.authority.PhoneModifyActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:226:9-105
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:226:19-103
+activity#com.kiun.modelcommonsupport.controllers.authority.SettingActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:228:9-101
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:228:19-99
+activity#com.kiun.modelcommonsupport.ui.rollout.activity.RolloutPreviewActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:231:9-106
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:231:19-104
+activity#com.kiun.modelcommonsupport.controllers.CameraActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:232:9-90
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:232:19-88
+activity#com.kiun.modelcommonsupport.controllers.SelectCityActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:233:9-94
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:233:19-92
+activity#com.kiun.modelcommonsupport.hx.ChatActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:237:9-122
+	android:windowSoftInputMode
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:237:78-120
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:237:19-77
+activity#com.kiun.modelcommonsupport.hx.HXMapActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:238:9-80
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:238:19-78
+activity#com.kiun.modelcommonsupport.hx.ContactListActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:239:9-86
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:239:19-84
+activity#com.kiun.modelcommonsupport.hx.VideoCallActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:240:9-84
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:240:19-82
+activity#com.kiun.modelcommonsupport.hx.VoiceCallActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:241:9-85
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:241:19-82
+activity#com.hyphenate.easeui.ui.EaseShowBigImageActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:242:9-94
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:242:19-82
+activity#com.xzxx.decorate.o2o.master.SendToBaseActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:246:9-55
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:246:19-53
+activity#com.xzxx.decorate.o2o.master.SkillItemActivity
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:247:9-54
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:247:19-52
+service#com.kiun.modelcommonsupport.push.DemoIntentService
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:250:9-85
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:250:18-83
+service#com.kiun.modelcommonsupport.push.DemoPushService
+ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:253:9-258:19
+	android:process
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:257:13-43
+	android:label
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:256:13-40
+	android:exported
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:255:13-36
+	android:name
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml:254:13-76
+uses-sdk
+INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+MERGED from [com.android.support:multidex:1.0.2] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/992b45a68ad6cdda3135432210788a05/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/992b45a68ad6cdda3135432210788a05/AndroidManifest.xml:20:5-43
+MERGED from [:libmc] /Users/kiun2007/Documents/application/git/android/o2o-android-app/libmc/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:libmc] /Users/kiun2007/Documents/application/git/android/o2o-android-app/libmc/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:easeui] /Users/kiun2007/Documents/application/git/android/o2o-android-app/easeui/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:easeui] /Users/kiun2007/Documents/application/git/android/o2o-android-app/easeui/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/0a5ef9313469dff3449149d8752e28a1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/0a5ef9313469dff3449149d8752e28a1/AndroidManifest.xml:20:5-44
+MERGED from [com.yuyh.bubble:library:1.0.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/9719a63e24ecc7c9af90eb4545098267/AndroidManifest.xml:7:5-9:41
+MERGED from [com.yuyh.bubble:library:1.0.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/9719a63e24ecc7c9af90eb4545098267/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7a953206d7378e2c45c972d09e3fcdd7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/7a953206d7378e2c45c972d09e3fcdd7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/8dd8bf0716543460b0b1a06c8af0d01e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/8dd8bf0716543460b0b1a06c8af0d01e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.youth.banner:banner:1.4.10] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/banner-1.4.10.aar/ba3de41a4bff30971928c024d2794192/AndroidManifest.xml:7:5-9:41
+MERGED from [com.youth.banner:banner:1.4.10] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/banner-1.4.10.aar/ba3de41a4bff30971928c024d2794192/AndroidManifest.xml:7:5-9:41
+MERGED from [com.githang:com-phillipcalvin-iconbutton:2.0.2] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/com-phillipcalvin-iconbutton-2.0.2.aar/836cdf109645a81a99b3004c64589bc4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.githang:com-phillipcalvin-iconbutton:2.0.2] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/com-phillipcalvin-iconbutton-2.0.2.aar/836cdf109645a81a99b3004c64589bc4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.makeramen:roundedimageview:2.2.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/roundedimageview-2.2.1.aar/8e3710d66725107066c2d3b6aff443c8/AndroidManifest.xml:7:5-43
+MERGED from [com.makeramen:roundedimageview:2.2.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/roundedimageview-2.2.1.aar/8e3710d66725107066c2d3b6aff443c8/AndroidManifest.xml:7:5-43
+MERGED from [:customprogressview:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/customprogressview.aar/0facef835c3b2675239fe4098c10173a/AndroidManifest.xml:7:5-9:41
+MERGED from [:customprogressview:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/customprogressview.aar/0facef835c3b2675239fe4098c10173a/AndroidManifest.xml:7:5-9:41
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:8:5-10:41
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:8:5-10:41
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/SmartRefreshLayout-1.1.0-alpha-14.aar/41e07de9228a886ed06d86c538805d48/AndroidManifest.xml:7:5-9:41
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/SmartRefreshLayout-1.1.0-alpha-14.aar/41e07de9228a886ed06d86c538805d48/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:transition:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/a75f6b77344e1a2f4a1ed9587aaa175e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/a75f6b77344e1a2f4a1ed9587aaa175e/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/842c02f38eba3d1c646e3247c90bd8fa/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/842c02f38eba3d1c646e3247c90bd8fa/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/87e91b5d9e47b6b3f1ce36cb1d4a8eb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/87e91b5d9e47b6b3f1ce36cb1d4a8eb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/e56b17d34630e7a80d4ffd2619b85b8b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/e56b17d34630e7a80d4ffd2619b85b8b/AndroidManifest.xml:20:5-44
+MERGED from [com.github.chrisbanes.photoview:library:1.2.3] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/library-1.2.3.aar/5c86da427e86273ff563c25d0d15b799/AndroidManifest.xml:2:5-72
+MERGED from [com.github.chrisbanes.photoview:library:1.2.3] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/library-1.2.3.aar/5c86da427e86273ff563c25d0d15b799/AndroidManifest.xml:2:5-72
+MERGED from [com.google.android.gms:play-services-base:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.0.aar/323a34296337017d04a4b966ee6d0566/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.0.aar/323a34296337017d04a4b966ee6d0566/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.4.0.aar/2acbd599b23ea9527bc1f951d3e95dae/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.4.0.aar/2acbd599b23ea9527bc1f951d3e95dae/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.4.0.aar/e8c8ebe0b287f160eb9994fb2ff84b2f/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.4.0.aar/e8c8ebe0b287f160eb9994fb2ff84b2f/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/9fe0aeece4f4b7a56806e58483feb392/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/9fe0aeece4f4b7a56806e58483feb392/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/5df769c899f14aa9bf437b6af99fe5d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/5df769c899f14aa9bf437b6af99fe5d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/faa5cef6fa262e2ec0f3abdce7de309b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/faa5cef6fa262e2ec0f3abdce7de309b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/a3fb6d3edc8947510939dbb73f6607ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/a3fb6d3edc8947510939dbb73f6607ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/9e316a875411961055b14ec7019a0d23/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/9e316a875411961055b14ec7019a0d23/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/f53895c55aff8eab01e7bf2b48197e6f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/f53895c55aff8eab01e7bf2b48197e6f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/44d4156aad37a56e5be402cbfd203e68/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/44d4156aad37a56e5be402cbfd203e68/AndroidManifest.xml:20:5-44
+MERGED from [com.huxq17.xrefreshview:xrefreshview:3.6.9] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/xrefreshview-3.6.9.aar/cde6cdf63f148b0fb968f93dfdd47272/AndroidManifest.xml:8:5-10:41
+MERGED from [com.huxq17.xrefreshview:xrefreshview:3.6.9] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/xrefreshview-3.6.9.aar/cde6cdf63f148b0fb968f93dfdd47272/AndroidManifest.xml:8:5-10:41
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:7:5-9:41
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fc41f719511b5815982283a79f3ca451/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fc41f719511b5815982283a79f3ca451/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/52cedd242834a2d49168ca6e3eeab202/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/52cedd242834a2d49168ca6e3eeab202/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1fa40ea74c19cc3b6fa725f2a48073b7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/1fa40ea74c19cc3b6fa725f2a48073b7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/a6c300c05b2d26e58770bbe00fc10eec/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/a6c300c05b2d26e58770bbe00fc10eec/AndroidManifest.xml:20:5-44
+INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+		INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+		ADDED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+		INJECTED from /Users/kiun2007/Documents/application/git/android/o2o-android-app/master/src/main/AndroidManifest.xml
+uses-permission#android.permission.CALL_PHONE
+ADDED from [:libmc] /Users/kiun2007/Documents/application/git/android/o2o-android-app/libmc/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-69
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:71:5-69
+MERGED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:71:5-69
+	android:name
+		ADDED from [:libmc] /Users/kiun2007/Documents/application/git/android/o2o-android-app/libmc/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:22-66
+uses-permission#android.permission.READ_CONTACTS
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:67:5-72
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:67:22-69
+uses-permission#android.permission.READ_CALL_LOG
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:69:5-72
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:69:22-69
+uses-permission#android.permission.READ_SMS
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:85:5-67
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:85:22-64
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:88:5-70
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:88:22-67
+uses-permission#android.permission.PACKAGE_USAGE_STATS
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:94:5-97:47
+	xmlns:tools
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:95:9-55
+	tools:ignore
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:97:9-44
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:96:9-62
+activity#com.amos.modulebase.activity.base.HomeActivity
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:129:9-139:20
+	android:screenOrientation
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:132:13-49
+	android:windowSoftInputMode
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:133:13-67
+	android:configChanges
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:131:13-59
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:130:13-74
+activity#com.amos.modulebase.activity.base.Item1Activity
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:141:9-145:70
+	android:screenOrientation
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:144:13-49
+	android:windowSoftInputMode
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:145:13-67
+	android:configChanges
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:143:13-59
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:142:13-75
+activity#com.amos.modulebase.activity.WebBaseActivity
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:147:9-151:70
+	android:screenOrientation
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:150:13-49
+	android:windowSoftInputMode
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:151:13-67
+	android:configChanges
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:149:13-59
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:148:13-72
+activity#com.amos.modulebase.activity.base.Item2Activity
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:154:9-158:70
+	android:screenOrientation
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:157:13-49
+	android:windowSoftInputMode
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:158:13-67
+	android:configChanges
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:156:13-59
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:155:13-75
+activity#com.amos.modulebase.activity.base.Item6Activity
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:161:9-165:70
+	android:screenOrientation
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:164:13-49
+	android:windowSoftInputMode
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:165:13-67
+	android:configChanges
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:163:13-59
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:162:13-75
+activity#com.amos.modulebase.activity.base.Item7Activity
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:167:9-171:70
+	android:screenOrientation
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:170:13-49
+	android:windowSoftInputMode
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:171:13-67
+	android:configChanges
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:169:13-59
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:168:13-75
+activity#com.amos.modulebase.activity.base.TestOkHttpActivity
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:172:9-176:70
+	android:screenOrientation
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:175:13-49
+	android:windowSoftInputMode
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:176:13-67
+	android:configChanges
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:174:13-59
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:173:13-80
+activity#com.amos.modulebase.activity.base.TestDBActivity
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:177:9-181:70
+	android:screenOrientation
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:180:13-49
+	android:windowSoftInputMode
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:181:13-67
+	android:configChanges
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:179:13-59
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:178:13-76
+activity#com.amos.modulebase.activity.retrofit.TestRetrofitActivity
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:182:9-186:70
+	android:screenOrientation
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:185:13-49
+	android:windowSoftInputMode
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:186:13-67
+	android:configChanges
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:184:13-59
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:183:13-86
+activity#com.amos.modulebase.activity.ImageBrowseActivity
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:189:9-192:52
+	android:screenOrientation
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:192:13-49
+	android:configChanges
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:191:13-59
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:190:13-76
+activity#com.amos.modulebase.activity.mvp.test.activity.MvpTestActivity
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:193:9-197:70
+	android:screenOrientation
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:196:13-49
+	android:windowSoftInputMode
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:197:13-67
+	android:configChanges
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:195:13-59
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:194:13-90
+activity#com.amos.modulebase.activity.mvp.test.TestActivity
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:198:9-202:70
+	android:screenOrientation
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:201:13-49
+	android:windowSoftInputMode
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:202:13-67
+	android:configChanges
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:200:13-59
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:199:13-78
+service#com.amos.modulebase.service.UpdateService
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:204:9-217:19
+	android:enabled
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:206:13-35
+	android:exported
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:207:13-37
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:205:13-69
+intent-filter#action:name:com.amos.modulebase.service.UpdateService+category:name:android.intent.category.default
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:212:13-216:29
+	android:priority
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:212:28-51
+action#com.amos.modulebase.service.UpdateService
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:213:17-84
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:213:25-81
+category#android.intent.category.default
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:215:17-76
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:215:27-73
+service#com.amos.modulebase.service.TestIntentService
+ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:218:9-81
+	android:name
+		ADDED from [:modulebase:] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/modulebase.aar/2857ae9aee99600bc300e9b6a7250081/AndroidManifest.xml:218:18-78
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.0.aar/323a34296337017d04a4b966ee6d0566/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.0.aar/323a34296337017d04a4b966ee6d0566/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.0.aar/323a34296337017d04a4b966ee6d0566/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.0.aar/323a34296337017d04a4b966ee6d0566/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.4.0.aar/e8c8ebe0b287f160eb9994fb2ff84b2f/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.4.0.aar/e8c8ebe0b287f160eb9994fb2ff84b2f/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.4.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.4.0.aar/e8c8ebe0b287f160eb9994fb2ff84b2f/AndroidManifest.xml:20:20-65
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:23:5-78
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:23:22-75
+uses-permission#getui.permission.GetuiService.${applicationId}
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:26:5-86
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:26:22-83
+uses-permission#getui.permission.GetuiService.com.xzxx.decorate.o2o.master
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:26:5-86
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:26:22-83
+permission#getui.permission.GetuiService.${applicationId}
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:28:5-30:44
+	android:protectionLevel
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:30:9-41
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:29:9-70
+permission#getui.permission.GetuiService.com.xzxx.decorate.o2o.master
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:28:5-30:44
+	android:protectionLevel
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:30:9-41
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:29:9-70
+meta-data#PUSH_APPID
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:35:9-37:47
+	android:value
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:37:13-44
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:36:13-38
+meta-data#PUSH_APPKEY
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:38:9-40:48
+	android:value
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:40:13-45
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:39:13-39
+meta-data#PUSH_APPSECRET
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:41:9-43:51
+	android:value
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:43:13-48
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:42:13-42
+service#com.igexin.sdk.PushService
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:46:9-54:19
+	android:process
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:50:13-43
+	android:label
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:49:13-47
+	android:exported
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:48:13-36
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:47:13-54
+intent-filter#action:name:com.igexin.sdk.action.service.message
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:51:13-53:29
+action#com.igexin.sdk.action.service.message
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:52:17-80
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:52:25-77
+receiver#com.igexin.sdk.PushReceiver
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:56:9-66:20
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:56:19-61
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED+action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.MEDIA_MOUNTED+action:name:android.intent.action.USER_PRESENT+action:name:android.net.conn.CONNECTIVITY_CHANGE+action:name:com.igexin.sdk.action.refreshls
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:57:13-65:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:59:17-79
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:59:25-76
+action#com.igexin.sdk.action.refreshls
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:61:17-74
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:61:25-71
+action#android.intent.action.MEDIA_MOUNTED
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:62:17-78
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:62:25-75
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:63:17-87
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:63:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:64:17-90
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:64:25-87
+activity#com.igexin.sdk.PushActivity
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:68:9-74:75
+	android:process
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:72:13-43
+	android:excludeFromRecents
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:70:13-46
+	android:exported
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:71:13-37
+	android:theme
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:74:13-72
+	android:taskAffinity
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:73:13-67
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:69:13-55
+activity#com.igexin.sdk.GActivity
+ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:75:9-81:75
+	android:process
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:79:13-43
+	android:excludeFromRecents
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:77:13-46
+	android:exported
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:78:13-36
+	android:theme
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:81:13-72
+	android:taskAffinity
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:80:13-67
+	android:name
+		ADDED from [com.getui:sdk:2.12.5.0] /Users/kiun2007/.gradle/caches/transforms-1/files-1.1/sdk-2.12.5.0.aar/98588f3d510c3e304872a0053d9110b1/AndroidManifest.xml:76:13-52
